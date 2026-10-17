@@ -48,17 +48,22 @@ func update_facing_direction(direction: float):
 	var is_facing_left = direction < 0
 	animated_sprite_2d.flip_h = is_facing_left
 	if is_facing_left:
-		animated_sprite_2d.position.x = -12.5
-		$Hitbox.position.x = -abs($Hitbox.position.x) 
+		animated_sprite_2d.position.x = 12
+		hitbox.scale.x = -1
 	else:
 		animated_sprite_2d.position.x = 0
-		$Hitbox.position.x = abs($Hitbox.position.x)
+		hitbox.scale.x = 1
 func update_animation(direction: float):
+	if is_attacking:
+		return
+		
 	if not is_on_floor():
-		if animated_sprite_2d.animation != "jump":
+		if velocity.y < 0.0:
 			animated_sprite_2d.play("jump")
+		elif velocity.y > 0.0:
+			animated_sprite_2d.play("fall")
 	elif direction != 0:
-		animated_sprite_2d.play("walk")
+		animated_sprite_2d.play("run")
 	else:
 		animated_sprite_2d.play("idle")
 func attack(attack_anim: String):
