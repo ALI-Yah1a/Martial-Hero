@@ -1,0 +1,196 @@
+{
+  "name": "open",
+  "frame_width": 240,
+  "frame_height": 318,
+  "frame_count": 29,
+  "loop": false,
+  "letter_rect": [
+    50,
+    14,
+    140,
+    200
+  ],
+  "envelope_rect": [
+    36,
+    200,
+    168,
+    110
+  ],
+  "note": "letter_rect = x, y, w, h of the unfolded letter on the last frame - draw your own text there.",
+  "frames": [
+    {
+      "file": "frames/open_00.png",
+      "x": 0,
+      "y": 0,
+      "duration_ms": 120
+    },
+    {
+      "file": "frames/open_01.png",
+      "x": 240,
+      "y": 0,
+      "duration_ms": 70
+    },
+    {
+      "file": "frames/open_02.png",
+      "x": 480,
+      "y": 0,
+      "duration_ms": 70
+    },
+    {
+      "file": "frames/open_03.png",
+      "x": 720,
+      "y": 0,
+      "duration_ms": 90
+    },
+    {
+      "file": "frames/open_04.png",
+      "x": 960,
+      "y": 0,
+      "duration_ms": 140
+    },
+    {
+      "file": "frames/open_05.png",
+      "x": 1200,
+      "y": 0,
+      "duration_ms": 140
+    },
+    {
+      "file": "frames/open_06.png",
+      "x": 1440,
+      "y": 0,
+      "duration_ms": 45
+    },
+    {
+      "file": "frames/open_07.png",
+      "x": 1680,
+      "y": 0,
+      "duration_ms": 45
+    },
+    {
+      "file": "frames/open_08.png",
+      "x": 1920,
+      "y": 0,
+      "duration_ms": 45
+    },
+    {
+      "file": "frames/open_09.png",
+      "x": 2160,
+      "y": 0,
+      "duration_ms": 45
+    },
+    {
+      "file": "frames/open_10.png",
+      "x": 2400,
+      "y": 0,
+      "duration_ms": 45
+    },
+    {
+      "file": "frames/open_11.png",
+      "x": 2640,
+      "y": 0,
+      "duration_ms": 45
+    },
+    {
+      "file": "frames/open_12.png",
+      "x": 2880,
+      "y": 0,
+      "duration_ms": 45
+    },
+    {
+      "file": "frames/open_13.png",
+      "x": 3120,
+      "y": 0,
+      "duration_ms": 45
+    },
+    {
+      "file": "frames/open_14.png",
+      "x": 3360,
+      "y": 0,
+      "duration_ms": 45
+    },
+    {
+      "file": "frames/open_15.png",
+      "x": 3600,
+      "y": 0,
+      "duration_ms": 45
+    },
+    {
+      "file": "frames/open_16.png",
+      "x": 3840,
+      "y": 0,
+      "duration_ms": 45
+    },
+    {
+      "file": "frames/open_17.png",
+      "x": 4080,
+      "y": 0,
+      "duration_ms": 45
+    },
+    {
+      "file": "frames/open_18.png",
+      "x": 4320,
+      "y": 0,
+      "duration_ms": 60
+    },
+    {
+      "file": "frames/open_19.png",
+      "x": 4560,
+      "y": 0,
+      "duration_ms": 80
+    },
+    {
+      "file": "frames/open_20.png",
+      "x": 4800,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_21.png",
+      "x": 5040,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_22.png",
+      "x": 5280,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_23.png",
+      "x": 5520,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_24.png",
+      "x": 5760,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_25.png",
+      "x": 6000,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_26.png",
+      "x": 6240,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_27.png",
+      "x": 6480,
+      "y": 0,
+      "duration_ms": 70
+    },
+    {
+      "file": "frames/open_28.png",
+      "x": 6720,
+      "y": 0,
+      "duration_ms": 60
+    }
+  ]
+}

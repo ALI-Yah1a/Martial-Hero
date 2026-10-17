@@ -1,0 +1,113 @@
+{
+  "name": "open",
+  "frame_width": 492,
+  "frame_height": 336,
+  "frame_count": 16,
+  "loop": false,
+  "book_rect": [
+    36,
+    36,
+    420,
+    264
+  ],
+  "spine_x": 246,
+  "note": "Frames include a 36 px margin: rising pages and the cover grow past the book. Place the frame so book_rect lines up with your static book sprite.",
+  "frames": [
+    {
+      "file": "frames/open_00.png",
+      "x": 0,
+      "y": 0,
+      "duration_ms": 110
+    },
+    {
+      "file": "frames/open_01.png",
+      "x": 492,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_02.png",
+      "x": 984,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_03.png",
+      "x": 1476,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_04.png",
+      "x": 1968,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_05.png",
+      "x": 2460,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_06.png",
+      "x": 2952,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_07.png",
+      "x": 3444,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_08.png",
+      "x": 3936,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_09.png",
+      "x": 4428,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_10.png",
+      "x": 4920,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_11.png",
+      "x": 5412,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_12.png",
+      "x": 5904,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_13.png",
+      "x": 6396,
+      "y": 0,
+      "duration_ms": 55
+    },
+    {
+      "file": "frames/open_14.png",
+      "x": 6888,
+      "y": 0,
+      "duration_ms": 70
+    },
+    {
+      "file": "frames/open_15.png",
+      "x": 7380,
+      "y": 0,
+      "duration_ms": 60
+    }
+  ]
+}

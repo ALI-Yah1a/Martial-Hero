@@ -1,0 +1,39 @@
+{
+  "dialog_box": [
+    9,
+    9,
+    9,
+    9
+  ],
+  "dialog_box_small": [
+    9,
+    9,
+    9,
+    9
+  ],
+  "portrait_frame": [
+    9,
+    9,
+    9,
+    9
+  ],
+  "choice_box": [
+    9,
+    9,
+    9,
+    9
+  ],
+  "name_tag": [
+    4,
+    4,
+    4,
+    4
+  ],
+  "speech_bubble": [
+    6,
+    6,
+    6,
+    10
+  ],
+  "note": "left, top, right, bottom margins for 9-slice (Godot NinePatchRect patch margins)."
+}

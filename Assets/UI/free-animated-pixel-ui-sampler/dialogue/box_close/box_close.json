@@ -1,0 +1,64 @@
+{
+  "name": "box_close",
+  "frame_width": 308,
+  "frame_height": 76,
+  "frame_count": 7,
+  "loop": false,
+  "box_rect": [
+    6,
+    6,
+    296,
+    64
+  ],
+  "text_rect": [
+    22,
+    15,
+    264,
+    46
+  ],
+  "note": "box_rect / text_rect are where the opened box and its text area sit inside the frame.",
+  "frames": [
+    {
+      "file": "frames/box_close_00.png",
+      "x": 0,
+      "y": 0,
+      "duration_ms": 50
+    },
+    {
+      "file": "frames/box_close_01.png",
+      "x": 308,
+      "y": 0,
+      "duration_ms": 40
+    },
+    {
+      "file": "frames/box_close_02.png",
+      "x": 616,
+      "y": 0,
+      "duration_ms": 40
+    },
+    {
+      "file": "frames/box_close_03.png",
+      "x": 924,
+      "y": 0,
+      "duration_ms": 40
+    },
+    {
+      "file": "frames/box_close_04.png",
+      "x": 1232,
+      "y": 0,
+      "duration_ms": 40
+    },
+    {
+      "file": "frames/box_close_05.png",
+      "x": 1540,
+      "y": 0,
+      "duration_ms": 40
+    },
+    {
+      "file": "frames/box_close_06.png",
+      "x": 1848,
+      "y": 0,
+      "duration_ms": 60
+    }
+  ]
+}
