@@ -37,3 +37,11 @@ func _on_exit_pop_button_pressed() -> void:
 
 func _on_new_adv_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/levels.tscn")
+
+
+func _on_settings_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/settings.tscn")
+
+
+func _on_credits_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/credits.tscn")

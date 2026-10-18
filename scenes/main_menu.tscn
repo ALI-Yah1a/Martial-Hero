@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bf8hjp0cbjn5n"]
 
-[ext_resource type="Script" uid="uid://j6xto0maowby" path="res://scripts/main_menu.gd" id="1_qywvv"]
+[ext_resource type="Script" uid="uid://1iixsduih5kx" path="res://scripts/main_menu.gd" id="1_qywvv"]
 [ext_resource type="Texture2D" uid="uid://cy7imkq8rw4lt" path="res://Assets/UI/Jungle Pack/Morning/Jungle_Morning_1.jpg" id="1_tbmy8"]
 [ext_resource type="FontFile" uid="uid://fduvylaftmk2" path="res://Assets/UI/Cinzel/static/Cinzel-Medium.ttf" id="3_1dfpl"]
 [ext_resource type="FontFile" uid="uid://dcefqygvimlga" path="res://Assets/UI/Cinzel_Decorative/CinzelDecorative-Bold.ttf" id="3_bqqt6"]
@@ -1717,7 +1717,7 @@ layout_mode = 0
 offset_left = 54.0
 offset_top = 109.0
 offset_right = 445.0
-offset_bottom = 635.0
+offset_bottom = 176.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_al4r6")
 
 [node name="game title2" type="Label" parent="Main menu panel" unique_id=289587736]
@@ -1814,9 +1814,9 @@ modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 layout_mode = 0
 offset_left = 101.0
-offset_top = 214.0
+offset_top = 559.0
 offset_right = 406.0
-offset_bottom = 281.0
+offset_bottom = 626.0
 theme_override_colors/font_color = Color(0.84705883, 0.8745098, 0.7882353, 1)
 theme_override_colors/font_focus_color = Color(0.95686275, 0.9137255, 0.80784315, 1)
 theme_override_colors/font_pressed_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
@@ -1850,9 +1850,9 @@ modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 layout_mode = 0
 offset_left = 101.0
-offset_top = 290.0
+offset_top = 559.0
 offset_right = 406.0
-offset_bottom = 357.0
+offset_bottom = 626.0
 theme_override_colors/font_color = Color(0.84705883, 0.8745098, 0.7882353, 1)
 theme_override_colors/font_focus_color = Color(0.95686275, 0.9137255, 0.80784315, 1)
 theme_override_colors/font_pressed_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
@@ -1887,9 +1887,9 @@ modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 layout_mode = 0
 offset_left = 101.0
-offset_top = 366.0
+offset_top = 557.0
 offset_right = 406.0
-offset_bottom = 433.0
+offset_bottom = 624.0
 theme_override_colors/font_color = Color(0.84705883, 0.8745098, 0.7882353, 1)
 theme_override_colors/font_focus_color = Color(0.95686275, 0.9137255, 0.80784315, 1)
 theme_override_colors/font_pressed_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
@@ -1923,9 +1923,9 @@ modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 layout_mode = 0
 offset_left = 101.0
-offset_top = 441.0
+offset_top = 558.0
 offset_right = 406.0
-offset_bottom = 508.0
+offset_bottom = 625.0
 theme_override_colors/font_color = Color(0.84705883, 0.8745098, 0.7882353, 1)
 theme_override_colors/font_focus_color = Color(0.95686275, 0.9137255, 0.80784315, 1)
 theme_override_colors/font_pressed_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
@@ -1959,9 +1959,9 @@ modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 layout_mode = 0
 offset_left = 101.0
-offset_top = 519.0
+offset_top = 558.0
 offset_right = 406.0
-offset_bottom = 586.0
+offset_bottom = 625.0
 theme_override_colors/font_color = Color(0.84705883, 0.8745098, 0.7882353, 1)
 theme_override_colors/font_focus_color = Color(0.95686275, 0.9137255, 0.80784315, 1)
 theme_override_colors/font_pressed_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
@@ -1996,7 +1996,7 @@ stretch_mode = 5
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 90.0
-offset_top = 215.0
+offset_top = 564.0
 offset_right = 91.0
 offset_bottom = 576.0
 
@@ -2004,7 +2004,7 @@ offset_bottom = 576.0
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 419.0
-offset_top = 215.0
+offset_top = 572.0
 offset_right = 420.0
 offset_bottom = 577.0
 
@@ -2013,31 +2013,31 @@ modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 107.0
 offset_top = 207.0
-offset_right = 398.0
-offset_bottom = 208.0
+offset_right = 108.0
+offset_bottom = 210.0
 
 [node name="ColorRect4" type="ColorRect" parent="colorrects" unique_id=2013328556]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 107.0
 offset_top = 285.0
-offset_right = 398.0
-offset_bottom = 286.0
+offset_right = 108.0
+offset_bottom = 287.0
 
 [node name="ColorRect6" type="ColorRect" parent="colorrects" unique_id=907259131]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 107.0
 offset_top = 361.0
-offset_right = 398.0
-offset_bottom = 362.0
+offset_right = 108.0
+offset_bottom = 363.0
 
 [node name="ColorRect7" type="ColorRect" parent="colorrects" unique_id=852328216]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 107.0
 offset_top = 437.0
-offset_right = 398.0
+offset_right = 108.0
 offset_bottom = 438.0
 
 [node name="ColorRect8" type="ColorRect" parent="colorrects" unique_id=338792388]
@@ -2045,7 +2045,7 @@ modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 107.0
 offset_top = 513.0
-offset_right = 398.0
+offset_right = 108.0
 offset_bottom = 514.0
 
 [node name="ColorRect9" type="ColorRect" parent="colorrects" unique_id=1009267465]
@@ -2053,7 +2053,7 @@ modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 107.0
 offset_top = 593.0
-offset_right = 398.0
+offset_right = 108.0
 offset_bottom = 594.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=387403375]
@@ -2275,6 +2275,8 @@ texture_hover = ExtResource("32_xyero")
 stretch_mode = 5
 
 [connection signal="pressed" from="NewAdvButton" to="." method="_on_new_adv_button_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

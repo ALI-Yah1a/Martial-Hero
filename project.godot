@@ -15,6 +15,10 @@ run/main_scene="uid://bf8hjp0cbjn5n"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+AudioStreamPlayerGlobal="*uid://51gjk5jyoe35"
+
 [display]
 
 window/size/mode=3

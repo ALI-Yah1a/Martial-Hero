@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://51gjk5jyoe35"]
+
+[ext_resource type="AudioStream" uid="uid://n4e5w0xekb26" path="res://Assets/UI/alex-morgan-adventure-music-bold-trail-ahead-578489.mp3" id="1_nbeep"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=471839869]
+stream = ExtResource("1_nbeep")
+autoplay = true
+parameters/looping = true
