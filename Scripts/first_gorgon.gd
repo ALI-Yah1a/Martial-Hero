@@ -70,7 +70,7 @@ func update_facing_direction() -> void:
 		ray_cast.position.x = abs(ray_cast.position.x)
 	elif direction < 0:
 		animated_sprite_2d.flip_h = true
-		animated_sprite_2d.position.x = 5
+		animated_sprite_2d.position.x = -10
 		ray_cast.position.x = -abs(ray_cast.position.x)
 
 func update_animation() -> void:
