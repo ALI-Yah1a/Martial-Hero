@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://cnm2yskd44164"]
+
+[ext_resource type="Texture2D" uid="uid://d036mii5cru55" path="res://Assets/HUD/Base-01.png" id="1_xdjqv"]
+[ext_resource type="Texture2D" uid="uid://darawvlnshmai" path="res://Assets/Martial Hero/martial_hero_icon.png" id="2_u4a2s"]
+[ext_resource type="Texture2D" uid="uid://bo6t42fe3wlxy" path="res://Assets/HUD/32x32-Tilesheet.png" id="3_2qe5m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t76eq"]
+atlas = ExtResource("1_xdjqv")
+region = Rect2(1, 1, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g1idy"]
+atlas = ExtResource("3_2qe5m")
+region = Rect2(197, 135, 86, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imobx"]
+atlas = ExtResource("3_2qe5m")
+region = Rect2(295, 176, 82, 4)
+
+[node name="LevelUI" type="CanvasLayer" unique_id=469915797 groups=["UI"]]
+
+[node name="HUD" type="Control" parent="." unique_id=38721602]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PlayerStats" type="HBoxContainer" parent="HUD" unique_id=460630330]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 41.0
+offset_right = 228.0
+offset_bottom = 227.0
+
+[node name="PlayerIcon" type="TextureRect" parent="HUD/PlayerStats" unique_id=953564024]
+custom_minimum_size = Vector2(186, 186)
+layout_mode = 2
+texture = SubResource("AtlasTexture_t76eq")
+
+[node name="Face" type="TextureRect" parent="HUD/PlayerStats/PlayerIcon" unique_id=1416203330]
+layout_mode = 0
+offset_left = -19.0
+offset_top = -18.0
+offset_right = 158.0
+offset_bottom = 148.0
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("2_u4a2s")
+
+[node name="VitalsAndStats" type="VBoxContainer" parent="HUD/PlayerStats" unique_id=607839486]
+layout_mode = 2
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="HUD/PlayerStats/VitalsAndStats" unique_id=477387949]
+layout_mode = 2
+value = 100.0
+texture_under = SubResource("AtlasTexture_g1idy")
+texture_progress = SubResource("AtlasTexture_imobx")
+texture_progress_offset = Vector2(2, 9)
+
+[node name="CoinsTracker" type="HBoxContainer" parent="HUD/PlayerStats/VitalsAndStats" unique_id=2052287515]
+layout_mode = 2
+
+[node name="CoinIcon" type="TextureRect" parent="HUD/PlayerStats/VitalsAndStats/CoinsTracker" unique_id=145735796]
+layout_mode = 2
+
+[node name="CoinsLabel" type="Label" parent="HUD/PlayerStats/VitalsAndStats/CoinsTracker" unique_id=1557012617]
+layout_mode = 2
+
+[node name="GorgonsTracker" type="HBoxContainer" parent="HUD/PlayerStats/VitalsAndStats" unique_id=903190651]
+layout_mode = 2
+
+[node name="GorgonIcon" type="TextureRect" parent="HUD/PlayerStats/VitalsAndStats/GorgonsTracker" unique_id=575515379]
+layout_mode = 2
+
+[node name="GorgonLabel" type="Label" parent="HUD/PlayerStats/VitalsAndStats/GorgonsTracker" unique_id=970510831]
+layout_mode = 2
+
+[node name="CurrentLevelLabel" type="Label" parent="HUD/PlayerStats/VitalsAndStats" unique_id=928679182]
+layout_mode = 2
+
+[node name="PauseMenu" type="Control" parent="." unique_id=1686111363]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LevelCompleteMenu" type="Control" parent="." unique_id=140316735]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
