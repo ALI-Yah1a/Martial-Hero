@@ -3,10 +3,14 @@
 [ext_resource type="Script" uid="uid://d1bn6281frvcn" path="res://scripts/levels.gd" id="1_ly2og"]
 [ext_resource type="Texture2D" uid="uid://b1ifwgbmqdp3x" path="res://Assets/UI/Jungle Pack/Afternoon/Jungle_Afternoon_1.jpg" id="2_jj4e6"]
 [ext_resource type="FontFile" uid="uid://dcefqygvimlga" path="res://Assets/UI/Cinzel_Decorative/CinzelDecorative-Bold.ttf" id="3_byla0"]
+[ext_resource type="Texture2D" uid="uid://cus54j01jlvue" path="res://Assets/UI/free-animated-pixel-ui-sampler/book/close/close_sheet.png" id="4_clqd7"]
 [ext_resource type="Texture2D" uid="uid://11ifurumwul5" path="res://Assets/UI/free-animated-pixel-ui-sampler/book/open/open_sheet.png" id="4_r44b6"]
 [ext_resource type="FontFile" uid="uid://bnkmqorloralf" path="res://Assets/UI/Cinzel/static/Cinzel-SemiBold.ttf" id="5_00hpi"]
+[ext_resource type="Texture2D" uid="uid://c7wd5fanh83bh" path="res://Assets/UI/free-animated-pixel-ui-sampler/paper/scroll_unroll/unroll_sheet.png" id="5_1cmd0"]
+[ext_resource type="Texture2D" uid="uid://c81jclhc8mbsw" path="res://Assets/UI/free-animated-pixel-ui-sampler/paper/letter_open/open_sheet.png" id="5_6uglv"]
 [ext_resource type="Texture2D" uid="uid://3m13sa0fwyvb" path="res://Assets/UI/free-animated-pixel-ui-sampler/book/flip_forward/flip_forward_sheet.png" id="5_xf5mn"]
 [ext_resource type="Texture2D" uid="uid://dc3vwv1lyire3" path="res://Assets/UI/icon/log-out.png" id="6_6g56m"]
+[ext_resource type="Texture2D" uid="uid://bhapb6rlvh0h6" path="res://Assets/UI/free-animated-pixel-ui-sampler/paper/scroll_roll_up/roll_up_sheet.png" id="6_y860o"]
 [ext_resource type="Texture2D" uid="uid://c57834ehb18qk" path="res://Assets/UI/icon/log-out (2).png" id="7_hbvtp"]
 [ext_resource type="Texture2D" uid="uid://dfqtmo85cbjhl" path="res://Assets/UI/icon/log-out (1).png" id="8_bxgxo"]
 [ext_resource type="Texture2D" uid="uid://dfw52f4lccv75" path="res://Assets/UI/images.jpg" id="9_8i0b8"]
@@ -21,6 +25,933 @@
 [ext_resource type="Texture2D" uid="uid://bpbujc3knut24" path="res://Assets/UI/icon/step-back (2).png" id="15_xf5mn"]
 [ext_resource type="Texture2D" uid="uid://b6xoxeiesx5lj" path="res://Assets/UI/icon/step-back.png" id="16_clqd7"]
 [ext_resource type="Texture2D" uid="uid://cjksgexu6u41t" path="res://Assets/UI/icon/step-back (1).png" id="17_6uglv"]
+[ext_resource type="Texture2D" uid="uid://b330rbn55wd66" path="res://Assets/UI/icon/undo-2 (2).png" id="26_l5f4o"]
+[ext_resource type="Texture2D" uid="uid://b3qqlidrsf1uc" path="res://Assets/UI/icon/undo-2.png" id="27_gkykt"]
+[ext_resource type="Texture2D" uid="uid://dcmiprdfynxfy" path="res://Assets/UI/icon/undo-2 (1).png" id="28_v6qxd"]
+
+[sub_resource type="Animation" id="Animation_l5f4o"]
+resource_name = "Levels'animation"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LevelsLabel2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LevelsLabel:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Levels\'Panel/BookAnimation:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.5, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Levels\'Panel/LetterAnimation:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(2, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Levels\'Panel/ScrollAnimation:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(2.5, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Levels\'Panel/colorrect/ColorRect1:size")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(3, 3.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2, 1), Vector2(2, 430)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Levels\'Panel/colorrect/ColorRect1:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(3, 3.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1118, 127), Vector2(1118, 127)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Levels\'Panel/colorrect/ColorRect1:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(3, 3.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Levels\'Panel/colorrect/ColorRect2:size")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(3.5, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 2), Vector2(1067, 2)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Levels\'Panel/colorrect/ColorRect2:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(3.5, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(42, 117), Vector2(42, 117)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Levels\'Panel/colorrect/ColorRect2:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(3.5, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Levels\'Panel/colorrect/ColorRect3:size")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(4, 4.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2, 1), Vector2(2, 430)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Levels\'Panel/colorrect/ColorRect3:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(4, 4.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(33, 127), Vector2(33, 127)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Levels\'Panel/colorrect/ColorRect3:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(4, 4.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Levels\'Panel/colorrect/ColorRect4:size")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(4.5, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 2), Vector2(1067, 2)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Levels\'Panel/colorrect/ColorRect4:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(4.5, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(42, 568), Vector2(42, 568)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Levels\'Panel/colorrect/ColorRect4:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(4.5, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Levels\'Panel/colorrect/ColorRect5:size")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2, 1), Vector2(2, 311)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Levels\'Panel/colorrect/ColorRect5:position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(861, 186), Vector2(861, 186)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Levels\'Panel/colorrect/ColorRect5:modulate")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Levels\'Panel/colorrect/ColorRect6:modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(5.5, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Levels\'Panel/colorrect/ColorRect6:size")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(5.5, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2, 311), Vector2(2, 311)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Levels\'Panel/colorrect/ColorRect6:position")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(5.5, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(265, 186), Vector2(265, 186)]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Levels\'Panel:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(1, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_gkykt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LevelsLabel2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LevelsLabel:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Levels\'Panel/BookAnimation:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Levels\'Panel/LetterAnimation:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Levels\'Panel/ScrollAnimation:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Levels\'Panel/colorrect/ColorRect1:size")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Levels\'Panel/colorrect/ColorRect1:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1118, 127)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Levels\'Panel/colorrect/ColorRect1:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Levels\'Panel/colorrect/ColorRect2:size")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 2)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Levels\'Panel/colorrect/ColorRect2:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(42, 117)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Levels\'Panel/colorrect/ColorRect2:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Levels\'Panel/colorrect/ColorRect3:size")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2, 1)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Levels\'Panel/colorrect/ColorRect3:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(33, 127)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Levels\'Panel/colorrect/ColorRect3:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Levels\'Panel/colorrect/ColorRect4:size")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 2)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Levels\'Panel/colorrect/ColorRect4:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(42, 568)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Levels\'Panel/colorrect/ColorRect4:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Levels\'Panel/colorrect/ColorRect5:size")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2, 1)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Levels\'Panel/colorrect/ColorRect5:position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(861, 186)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Levels\'Panel/colorrect/ColorRect5:modulate")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Levels\'Panel/colorrect/ColorRect6:modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Levels\'Panel/colorrect/ColorRect6:size")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2, 1)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Levels\'Panel/colorrect/ColorRect6:position")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(265, 186)]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Levels\'Panel:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v6qxd"]
+_data = {
+&"Levels\'animation": SubResource("Animation_l5f4o"),
+&"RESET": SubResource("Animation_gkykt")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v6qxd"]
+bg_color = Color(0.015686275, 0.07450981, 0.105882354, 0.7176471)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.85490197, 0.8627451, 0.2627451, 0.8392157)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8g8v2"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(0, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_typi5"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(240, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8t1t3"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(480, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4703"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(720, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4avfb"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(960, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_famij"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(1200, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7npgt"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(1440, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a0nj4"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(1680, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3u24"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(1920, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8368n"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(2160, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ue1em"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(2400, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_krtx5"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(2640, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3uws"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(2880, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hsyn"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(3120, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0v2t"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(3360, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l45vp"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(3600, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0kjw"]
+atlas = ExtResource("5_1cmd0")
+region = Rect2(3840, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fjkax"]
+atlas = ExtResource("6_y860o")
+region = Rect2(0, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_03dlh"]
+atlas = ExtResource("6_y860o")
+region = Rect2(240, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_exga0"]
+atlas = ExtResource("6_y860o")
+region = Rect2(480, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p8gk8"]
+atlas = ExtResource("6_y860o")
+region = Rect2(720, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q16b2"]
+atlas = ExtResource("6_y860o")
+region = Rect2(960, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fb65a"]
+atlas = ExtResource("6_y860o")
+region = Rect2(1200, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6k08c"]
+atlas = ExtResource("6_y860o")
+region = Rect2(1440, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crktn"]
+atlas = ExtResource("6_y860o")
+region = Rect2(1680, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41ham"]
+atlas = ExtResource("6_y860o")
+region = Rect2(1920, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmir5"]
+atlas = ExtResource("6_y860o")
+region = Rect2(2160, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3mx2b"]
+atlas = ExtResource("6_y860o")
+region = Rect2(2400, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ys1da"]
+atlas = ExtResource("6_y860o")
+region = Rect2(2640, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xq5sp"]
+atlas = ExtResource("6_y860o")
+region = Rect2(2880, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5lfqg"]
+atlas = ExtResource("6_y860o")
+region = Rect2(3120, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7f0l6"]
+atlas = ExtResource("6_y860o")
+region = Rect2(3360, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_so8wm"]
+atlas = ExtResource("6_y860o")
+region = Rect2(3600, 0, 240, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pv6sd"]
+atlas = ExtResource("6_y860o")
+region = Rect2(3840, 0, 240, 300)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ralei"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8g8v2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_typi5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8t1t3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4703")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4avfb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_famij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7npgt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a0nj4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3u24")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8368n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ue1em")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_krtx5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g3uws")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0hsyn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0v2t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l45vp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0kjw")
+}],
+"loop": 0,
+"name": &"scroll down",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fjkax")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_03dlh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_exga0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p8gk8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q16b2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fb65a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6k08c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crktn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41ham")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmir5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3mx2b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ys1da")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xq5sp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5lfqg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7f0l6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_so8wm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pv6sd")
+}],
+"loop": 0,
+"name": &"scroll up",
+"speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljw1q"]
+atlas = ExtResource("4_clqd7")
+region = Rect2(0, 0, 492, 336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_viev8"]
+atlas = ExtResource("4_clqd7")
+region = Rect2(492, 0, 492, 336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5yi27"]
+atlas = ExtResource("4_clqd7")
+region = Rect2(984, 0, 492, 336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4s307"]
+atlas = ExtResource("4_clqd7")
+region = Rect2(1476, 0, 492, 336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sonfr"]
+atlas = ExtResource("4_clqd7")
+region = Rect2(1968, 0, 492, 336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehdu7"]
+atlas = ExtResource("4_clqd7")
+region = Rect2(2460, 0, 492, 336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sodv8"]
+atlas = ExtResource("4_clqd7")
+region = Rect2(2952, 0, 492, 336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k77ww"]
+atlas = ExtResource("4_clqd7")
+region = Rect2(3444, 0, 492, 336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_om6an"]
+atlas = ExtResource("4_clqd7")
+region = Rect2(3936, 0, 492, 336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_32gym"]
+atlas = ExtResource("4_clqd7")
+region = Rect2(4428, 0, 492, 336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hilbk"]
+atlas = ExtResource("4_clqd7")
+region = Rect2(4920, 0, 492, 336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1d51"]
+atlas = ExtResource("4_clqd7")
+region = Rect2(5412, 0, 492, 336)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1jewu"]
 atlas = ExtResource("4_r44b6")
@@ -138,6 +1069,47 @@ region = Rect2(4920, 0, 492, 336)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_ljw1q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_viev8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5yi27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4s307")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sonfr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehdu7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sodv8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k77ww")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_om6an")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_32gym")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hilbk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1d51")
+}],
+"loop": 0,
+"name": &"close book",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_1jewu")
 }, {
 "duration": 1.0,
@@ -234,6 +1206,217 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ralaa"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(0, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nfmmu"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(240, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1f8qy"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(480, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uoxeq"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(720, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1d08q"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(960, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_npx2c"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(1200, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hlhr8"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(1440, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8ejx"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(1680, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajtuc"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(1920, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srpqy"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(2160, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3b2bu"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(2400, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01xki"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(2640, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6ymn"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(2880, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2e0or"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(3120, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8e2v1"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(3360, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpetv"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(3600, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wi2ap"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(3840, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_457ug"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(4080, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pme70"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(4320, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sidbd"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(4560, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u41ea"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(4800, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xyila"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(5040, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4b4d"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(5280, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pxje0"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(5520, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qtkra"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(5760, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fqw7n"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(6000, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwkm1"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(6240, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5yeta"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(6480, 0, 240, 318)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3xyy"]
+atlas = ExtResource("5_6uglv")
+region = Rect2(6720, 0, 240, 318)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5kuey"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ralaa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nfmmu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1f8qy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uoxeq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1d08q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_npx2c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hlhr8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8ejx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ajtuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_srpqy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3b2bu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01xki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6ymn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2e0or")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8e2v1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpetv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wi2ap")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_457ug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pme70")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sidbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u41ea")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xyila")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4b4d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pxje0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qtkra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fqw7n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwkm1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5yeta")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y3xyy")
+}],
+"loop": 0,
+"name": &"open_letter",
+"speed": 10.0
+}]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqqt6"]
 bg_color = Color(0.078431375, 0.15294118, 0.12156863, 1)
 border_width_left = 4
@@ -279,6 +1462,65 @@ shadow_size = 4
 shadow_offset = Vector2(5, 4)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtw2f"]
+bg_color = Color(0.15686275, 0.32941177, 0.22745098, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0.03137255, 0.05882353, 0.047058824, 1)
+shadow_size = 3
+shadow_offset = Vector2(5, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d57it"]
+bg_color = Color(0.078431375, 0.15294118, 0.12156863, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.40784314, 0.4862745, 0.38039216, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0.03137255, 0.05882353, 0.047058824, 1)
+shadow_size = 3
+shadow_offset = Vector2(5, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1mp8j"]
+bg_color = Color(0.047058824, 0.105882354, 0.078431375, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.7882353, 0.6039216, 0.24313726, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 5
+shadow_offset = Vector2(5, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5kgwj"]
+bg_color = Color(0.21568628, 0.41568628, 0.2784314, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.03137255, 0.05882353, 0.047058824, 1)
+shadow_size = 4
+shadow_offset = Vector2(5, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fhw3u"]
 bg_color = Color(0.15686275, 0.32941177, 0.22745098, 1)
 border_width_left = 5
 border_width_top = 5
@@ -372,7 +1614,20 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ly2og")
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1725037763]
+z_index = 1
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
 [node name="TextureRect" type="TextureRect" parent="." unique_id=627885827]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -383,6 +1638,8 @@ texture = ExtResource("2_jj4e6")
 expand_mode = 1
 
 [node name="LevelsLabel2" type="Label" parent="." unique_id=1012579008]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -402,6 +1659,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="LevelsLabel" type="Label" parent="." unique_id=894233983]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -420,30 +1679,142 @@ text = "CHRONICLES"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="OpenButton" type="Button" parent="." unique_id=1352977265]
-z_index = 2
-layout_mode = 0
-offset_left = 572.0
-offset_top = 139.0
-offset_right = 839.0
-offset_bottom = 470.0
-flat = true
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=486312146]
+libraries/ = SubResource("AnimationLibrary_v6qxd")
+autoplay = &"Levels\'animation"
 
-[node name="BookAnimation" type="AnimatedSprite2D" parent="." unique_id=967839190]
-position = Vector2(572.5, 305)
+[node name="Levels\'Panel" type="Panel" parent="." unique_id=2093348888]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 93.0
+offset_right = -20.0
+offset_bottom = -54.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v6qxd")
+
+[node name="ScrollAnimation" type="AnimatedSprite2D" parent="Levels\'Panel" unique_id=1241154757]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+position = Vector2(974, 245)
+sprite_frames = SubResource("SpriteFrames_ralei")
+animation = &"scroll up"
+
+[node name="BookAnimation" type="AnimatedSprite2D" parent="Levels\'Panel" unique_id=967839190]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+position = Vector2(552.5, 212)
 scale = Vector2(1.2174797, 1.2202381)
 sprite_frames = SubResource("SpriteFrames_al4r6")
-animation = &"page_turn"
+animation = &"close book"
+frame = 11
+frame_progress = 1.0
 
-[node name="Pages" type="Control" parent="." unique_id=1836861665]
-anchors_preset = 0
-offset_left = 317.0
-offset_top = 142.0
-offset_right = 828.0
-offset_bottom = 465.0
+[node name="LetterAnimation" type="AnimatedSprite2D" parent="Levels\'Panel" unique_id=2117878277]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+position = Vector2(122, 213)
+sprite_frames = SubResource("SpriteFrames_5kuey")
+animation = &"open_letter"
 
-[node name="Page1" type="Control" parent="Pages" unique_id=1491666896]
+[node name="ScrollButton" type="Button" parent="Levels\'Panel" unique_id=604829672]
+texture_filter = 1
+layout_mode = 0
+offset_left = 867.0
+offset_top = 110.0
+offset_right = 1080.0
+offset_bottom = 358.0
+flat = true
+
+[node name="OpenButton" type="Button" parent="Levels\'Panel" unique_id=1352977265]
+z_index = 2
+texture_filter = 1
+layout_mode = 0
+offset_left = 552.0
+offset_top = 46.0
+offset_right = 819.0
+offset_bottom = 377.0
+flat = true
+
+[node name="CloseButton" type="Button" parent="Levels\'Panel" unique_id=1189338469]
+texture_filter = 1
+layout_mode = 0
+offset_left = 455.0
+offset_top = 395.0
+offset_right = 621.0
+offset_bottom = 469.0
+theme_override_colors/font_color = Color(0.84705883, 0.8745098, 0.7882353, 1)
+theme_override_colors/font_focus_color = Color(0.95686275, 0.9137255, 0.80784315, 1)
+theme_override_colors/font_pressed_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/line_spacing = 14
+theme_override_fonts/font = ExtResource("5_00hpi")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_bqqt6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8ln24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rtw2f")
+text = "ClOSE"
+
+[node name="LetterButton" type="Button" parent="Levels\'Panel" unique_id=1232384087]
+texture_filter = 1
+layout_mode = 0
+offset_left = 39.0
+offset_top = 250.0
+offset_right = 206.0
+offset_bottom = 359.0
+flat = true
+
+[node name="backtomainbutton" type="Button" parent="Levels\'Panel" unique_id=558173798]
+texture_filter = 1
+layout_mode = 0
+offset_left = 1000.0
+offset_top = -58.0
+offset_right = 1050.0
+offset_bottom = -14.0
+theme_override_colors/font_color = Color(0.84705883, 0.8745098, 0.7882353, 1)
+theme_override_colors/font_focus_color = Color(0.95686275, 0.9137255, 0.80784315, 1)
+theme_override_colors/font_pressed_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/line_spacing = 14
+theme_override_fonts/font = ExtResource("5_00hpi")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_d57it")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1mp8j")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5kgwj")
+theme_override_styles/focus = SubResource("StyleBoxFlat_fhw3u")
+script = ExtResource("11_4knel")
+
+[node name="TextureButton" type="TextureButton" parent="Levels\'Panel/backtomainbutton" unique_id=885622679]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("26_l5f4o")
+texture_pressed = ExtResource("27_gkykt")
+texture_hover = ExtResource("28_v6qxd")
+stretch_mode = 0
+
+[node name="Pages" type="Control" parent="Levels\'Panel" unique_id=1836861665]
 visible = false
+anchors_preset = 0
+offset_left = 297.0
+offset_top = 49.0
+offset_right = 808.0
+offset_bottom = 372.0
+
+[node name="Page1" type="Control" parent="Levels\'Panel/Pages" unique_id=1491666896]
+visible = false
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 0
 offset_left = 11.0
@@ -451,7 +1822,8 @@ offset_top = 13.0
 offset_right = 254.0
 offset_bottom = 314.0
 
-[node name="Label" type="Label" parent="Pages/Page1" unique_id=932607653]
+[node name="Label" type="Label" parent="Levels\'Panel/Pages/Page1" unique_id=932607653]
+texture_filter = 1
 layout_mode = 0
 offset_right = 243.0
 offset_bottom = 42.0
@@ -468,7 +1840,8 @@ text = "LEVEL 1"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="Pages/Page1" unique_id=924709011]
+[node name="Label2" type="Label" parent="Levels\'Panel/Pages/Page1" unique_id=924709011]
+texture_filter = 1
 layout_mode = 0
 offset_left = 8.0
 offset_top = 178.0
@@ -487,7 +1860,8 @@ text = "DIFFICULTY : ★☆☆☆☆"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Enter1Button" type="Button" parent="Pages/Page1" unique_id=1969854714]
+[node name="Enter1Button" type="Button" parent="Levels\'Panel/Pages/Page1" unique_id=1969854714]
+texture_filter = 1
 layout_mode = 0
 offset_left = 46.0
 offset_top = 226.0
@@ -507,7 +1881,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wu84c")
 theme_override_styles/focus = SubResource("StyleBoxFlat_rtw2f")
 text = "ENTER     "
 
-[node name="TextureButton" type="TextureButton" parent="Pages/Page1/Enter1Button" unique_id=1010628825]
+[node name="TextureButton" type="TextureButton" parent="Levels\'Panel/Pages/Page1/Enter1Button" unique_id=1010628825]
 texture_filter = 1
 layout_mode = 0
 offset_left = 114.0
@@ -519,8 +1893,9 @@ texture_pressed = ExtResource("7_hbvtp")
 texture_hover = ExtResource("8_bxgxo")
 stretch_mode = 5
 
-[node name="PanelContainer" type="PanelContainer" parent="Pages/Page1" unique_id=1414434342]
+[node name="PanelContainer" type="PanelContainer" parent="Levels\'Panel/Pages/Page1" unique_id=1414434342]
 clip_children = 1
+texture_filter = 1
 layout_mode = 0
 offset_left = 20.0
 offset_top = 51.0
@@ -528,14 +1903,16 @@ offset_right = 215.0
 offset_bottom = 165.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_al4r6")
 
-[node name="TextureRect" type="TextureRect" parent="Pages/Page1/PanelContainer" unique_id=1068984498]
+[node name="TextureRect" type="TextureRect" parent="Levels\'Panel/Pages/Page1/PanelContainer" unique_id=1068984498]
+texture_filter = 1
 layout_mode = 2
 texture = ExtResource("9_8i0b8")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="Page3" type="Control" parent="Pages" unique_id=153161057]
+[node name="Page3" type="Control" parent="Levels\'Panel/Pages" unique_id=153161057]
 visible = false
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 0
 offset_left = 11.0
@@ -543,7 +1920,8 @@ offset_top = 13.0
 offset_right = 254.0
 offset_bottom = 314.0
 
-[node name="Label" type="Label" parent="Pages/Page3" unique_id=2013969486]
+[node name="Label" type="Label" parent="Levels\'Panel/Pages/Page3" unique_id=2013969486]
+texture_filter = 1
 layout_mode = 0
 offset_right = 243.0
 offset_bottom = 42.0
@@ -560,7 +1938,8 @@ text = "LEVEL 3"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="Pages/Page3" unique_id=788664527]
+[node name="Label2" type="Label" parent="Levels\'Panel/Pages/Page3" unique_id=788664527]
+texture_filter = 1
 layout_mode = 0
 offset_left = 8.0
 offset_top = 178.0
@@ -579,7 +1958,8 @@ text = "DIFFICULTY : ★★★☆☆"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Enter111Button" type="Button" parent="Pages/Page3" unique_id=211604921]
+[node name="Enter111Button" type="Button" parent="Levels\'Panel/Pages/Page3" unique_id=211604921]
+texture_filter = 1
 layout_mode = 0
 offset_left = 46.0
 offset_top = 226.0
@@ -599,7 +1979,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_y860o")
 theme_override_styles/focus = SubResource("StyleBoxFlat_agv7l")
 text = "ENTER     "
 
-[node name="TextureButton" type="TextureButton" parent="Pages/Page3/Enter111Button" unique_id=1686233837]
+[node name="TextureButton" type="TextureButton" parent="Levels\'Panel/Pages/Page3/Enter111Button" unique_id=1686233837]
 texture_filter = 1
 layout_mode = 0
 offset_left = 114.0
@@ -611,8 +1991,9 @@ texture_pressed = ExtResource("7_hbvtp")
 texture_hover = ExtResource("8_bxgxo")
 stretch_mode = 5
 
-[node name="PanelContainer2" type="PanelContainer" parent="Pages/Page3" unique_id=1282494830]
+[node name="PanelContainer2" type="PanelContainer" parent="Levels\'Panel/Pages/Page3" unique_id=1282494830]
 clip_children = 1
+texture_filter = 1
 layout_mode = 0
 offset_left = 20.0
 offset_top = 51.0
@@ -620,14 +2001,16 @@ offset_right = 215.0
 offset_bottom = 165.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_al4r6")
 
-[node name="TextureRect" type="TextureRect" parent="Pages/Page3/PanelContainer2" unique_id=444586575]
+[node name="TextureRect" type="TextureRect" parent="Levels\'Panel/Pages/Page3/PanelContainer2" unique_id=444586575]
+texture_filter = 1
 layout_mode = 2
 texture = ExtResource("10_0rm5t")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="Page5" type="Control" parent="Pages" unique_id=979409532]
+[node name="Page5" type="Control" parent="Levels\'Panel/Pages" unique_id=979409532]
 visible = false
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 0
 offset_left = 11.0
@@ -635,7 +2018,8 @@ offset_top = 13.0
 offset_right = 254.0
 offset_bottom = 314.0
 
-[node name="Label5" type="Label" parent="Pages/Page5" unique_id=349981332]
+[node name="Label5" type="Label" parent="Levels\'Panel/Pages/Page5" unique_id=349981332]
+texture_filter = 1
 layout_mode = 0
 offset_right = 243.0
 offset_bottom = 42.0
@@ -652,7 +2036,8 @@ text = "LEVEL 5"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label222" type="Label" parent="Pages/Page5" unique_id=661545303]
+[node name="Label222" type="Label" parent="Levels\'Panel/Pages/Page5" unique_id=661545303]
+texture_filter = 1
 layout_mode = 0
 offset_left = 8.0
 offset_top = 178.0
@@ -671,7 +2056,8 @@ text = "DIFFICULTY : ★★★★★"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Enter11111Button" type="Button" parent="Pages/Page5" unique_id=2108525828]
+[node name="Enter11111Button" type="Button" parent="Levels\'Panel/Pages/Page5" unique_id=2108525828]
+texture_filter = 1
 layout_mode = 0
 offset_left = 46.0
 offset_top = 226.0
@@ -691,7 +2077,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_y860o")
 theme_override_styles/focus = SubResource("StyleBoxFlat_agv7l")
 text = "ENTER     "
 
-[node name="TextureButton" type="TextureButton" parent="Pages/Page5/Enter11111Button" unique_id=977465883]
+[node name="TextureButton" type="TextureButton" parent="Levels\'Panel/Pages/Page5/Enter11111Button" unique_id=977465883]
 texture_filter = 1
 layout_mode = 0
 offset_left = 114.0
@@ -703,8 +2089,9 @@ texture_pressed = ExtResource("7_hbvtp")
 texture_hover = ExtResource("8_bxgxo")
 stretch_mode = 5
 
-[node name="PanelContainer4" type="PanelContainer" parent="Pages/Page5" unique_id=235881801]
+[node name="PanelContainer4" type="PanelContainer" parent="Levels\'Panel/Pages/Page5" unique_id=235881801]
 clip_children = 1
+texture_filter = 1
 layout_mode = 0
 offset_left = 20.0
 offset_top = 51.0
@@ -712,14 +2099,16 @@ offset_right = 215.0
 offset_bottom = 165.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_al4r6")
 
-[node name="TextureRect" type="TextureRect" parent="Pages/Page5/PanelContainer4" unique_id=73103289]
+[node name="TextureRect" type="TextureRect" parent="Levels\'Panel/Pages/Page5/PanelContainer4" unique_id=73103289]
+texture_filter = 1
 layout_mode = 2
 texture = ExtResource("11_xf5mn")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="Page2" type="Control" parent="Pages" unique_id=1760201009]
+[node name="Page2" type="Control" parent="Levels\'Panel/Pages" unique_id=1760201009]
 visible = false
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 0
 offset_left = 258.0
@@ -727,7 +2116,8 @@ offset_top = 13.0
 offset_right = 501.0
 offset_bottom = 314.0
 
-[node name="Label" type="Label" parent="Pages/Page2" unique_id=366872663]
+[node name="Label" type="Label" parent="Levels\'Panel/Pages/Page2" unique_id=366872663]
+texture_filter = 1
 layout_mode = 0
 offset_right = 243.0
 offset_bottom = 42.0
@@ -744,7 +2134,8 @@ text = "LEVEL 2"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="Pages/Page2" unique_id=942531725]
+[node name="Label2" type="Label" parent="Levels\'Panel/Pages/Page2" unique_id=942531725]
+texture_filter = 1
 layout_mode = 0
 offset_left = 8.0
 offset_top = 178.0
@@ -763,7 +2154,8 @@ text = "DIFFICULTY : ★★☆☆☆"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Enter11Button" type="Button" parent="Pages/Page2" unique_id=1389515483]
+[node name="Enter11Button" type="Button" parent="Levels\'Panel/Pages/Page2" unique_id=1389515483]
+texture_filter = 1
 layout_mode = 0
 offset_left = 46.0
 offset_top = 226.0
@@ -783,7 +2175,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wu84c")
 theme_override_styles/focus = SubResource("StyleBoxFlat_rtw2f")
 text = "ENTER     "
 
-[node name="TextureButton" type="TextureButton" parent="Pages/Page2/Enter11Button" unique_id=2119221299]
+[node name="TextureButton" type="TextureButton" parent="Levels\'Panel/Pages/Page2/Enter11Button" unique_id=2119221299]
 texture_filter = 1
 layout_mode = 0
 offset_left = 114.0
@@ -795,8 +2187,9 @@ texture_pressed = ExtResource("7_hbvtp")
 texture_hover = ExtResource("8_bxgxo")
 stretch_mode = 5
 
-[node name="PanelContainer1" type="PanelContainer" parent="Pages/Page2" unique_id=1665084321]
+[node name="PanelContainer1" type="PanelContainer" parent="Levels\'Panel/Pages/Page2" unique_id=1665084321]
 clip_children = 1
+texture_filter = 1
 layout_mode = 0
 offset_left = 20.0
 offset_top = 51.0
@@ -804,13 +2197,15 @@ offset_right = 215.0
 offset_bottom = 165.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_al4r6")
 
-[node name="TextureRect" type="TextureRect" parent="Pages/Page2/PanelContainer1" unique_id=321971392]
+[node name="TextureRect" type="TextureRect" parent="Levels\'Panel/Pages/Page2/PanelContainer1" unique_id=321971392]
+texture_filter = 1
 layout_mode = 2
 texture = ExtResource("10_3vv5q")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="Page4" type="Control" parent="Pages" unique_id=897682642]
+[node name="Page4" type="Control" parent="Levels\'Panel/Pages" unique_id=897682642]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 0
 offset_left = 258.0
@@ -818,7 +2213,8 @@ offset_top = 13.0
 offset_right = 501.0
 offset_bottom = 314.0
 
-[node name="Label4" type="Label" parent="Pages/Page4" unique_id=525045590]
+[node name="Label4" type="Label" parent="Levels\'Panel/Pages/Page4" unique_id=525045590]
+texture_filter = 1
 layout_mode = 0
 offset_right = 243.0
 offset_bottom = 42.0
@@ -835,7 +2231,8 @@ text = "LEVEL 4"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label22" type="Label" parent="Pages/Page4" unique_id=1751801220]
+[node name="Label22" type="Label" parent="Levels\'Panel/Pages/Page4" unique_id=1751801220]
+texture_filter = 1
 layout_mode = 0
 offset_left = 8.0
 offset_top = 178.0
@@ -854,7 +2251,8 @@ text = "DIFFICULTY : ★★★★☆"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Enter1111Button" type="Button" parent="Pages/Page4" unique_id=191188259]
+[node name="Enter1111Button" type="Button" parent="Levels\'Panel/Pages/Page4" unique_id=191188259]
+texture_filter = 1
 layout_mode = 0
 offset_left = 46.0
 offset_top = 226.0
@@ -874,7 +2272,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_y860o")
 theme_override_styles/focus = SubResource("StyleBoxFlat_agv7l")
 text = "ENTER     "
 
-[node name="TextureButton" type="TextureButton" parent="Pages/Page4/Enter1111Button" unique_id=1111870428]
+[node name="TextureButton" type="TextureButton" parent="Levels\'Panel/Pages/Page4/Enter1111Button" unique_id=1111870428]
 texture_filter = 1
 layout_mode = 0
 offset_left = 114.0
@@ -886,8 +2284,9 @@ texture_pressed = ExtResource("7_hbvtp")
 texture_hover = ExtResource("8_bxgxo")
 stretch_mode = 5
 
-[node name="PanelContainer3" type="PanelContainer" parent="Pages/Page4" unique_id=1839520047]
+[node name="PanelContainer3" type="PanelContainer" parent="Levels\'Panel/Pages/Page4" unique_id=1839520047]
 clip_children = 1
+texture_filter = 1
 layout_mode = 0
 offset_left = 20.0
 offset_top = 51.0
@@ -895,13 +2294,15 @@ offset_right = 215.0
 offset_bottom = 165.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_al4r6")
 
-[node name="TextureRect" type="TextureRect" parent="Pages/Page4/PanelContainer3" unique_id=1849105176]
+[node name="TextureRect" type="TextureRect" parent="Levels\'Panel/Pages/Page4/PanelContainer3" unique_id=1849105176]
+texture_filter = 1
 layout_mode = 2
 texture = ExtResource("13_clqd7")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="Page6" type="Control" parent="Pages" unique_id=1636357717]
+[node name="Page6" type="Control" parent="Levels\'Panel/Pages" unique_id=1636357717]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 0
 offset_left = 258.0
@@ -909,7 +2310,8 @@ offset_top = 13.0
 offset_right = 501.0
 offset_bottom = 314.0
 
-[node name="Label6" type="Label" parent="Pages/Page6" unique_id=168398270]
+[node name="Label6" type="Label" parent="Levels\'Panel/Pages/Page6" unique_id=168398270]
+texture_filter = 1
 layout_mode = 0
 offset_top = 94.0
 offset_right = 243.0
@@ -928,7 +2330,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="PreviousButton" type="Button" parent="Pages" unique_id=347306565]
+[node name="PreviousButton" type="Button" parent="Levels\'Panel/Pages" unique_id=347306565]
+texture_filter = 1
 layout_mode = 0
 offset_left = 340.0
 offset_top = 361.0
@@ -948,7 +2351,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_y860o")
 theme_override_styles/focus = SubResource("StyleBoxFlat_agv7l")
 script = ExtResource("11_4knel")
 
-[node name="TextureButton" type="TextureButton" parent="Pages/PreviousButton" unique_id=401699096]
+[node name="TextureButton" type="TextureButton" parent="Levels\'Panel/Pages/PreviousButton" unique_id=401699096]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
@@ -965,7 +2368,8 @@ texture_pressed = ExtResource("16_clqd7")
 texture_hover = ExtResource("17_6uglv")
 stretch_mode = 0
 
-[node name="NextButton" type="Button" parent="Pages" unique_id=760911536]
+[node name="NextButton" type="Button" parent="Levels\'Panel/Pages" unique_id=760911536]
+texture_filter = 1
 layout_mode = 0
 offset_left = 105.0
 offset_top = 361.0
@@ -985,7 +2389,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_y860o")
 theme_override_styles/focus = SubResource("StyleBoxFlat_agv7l")
 script = ExtResource("11_4knel")
 
-[node name="TextureButton" type="TextureButton" parent="Pages/NextButton" unique_id=1671984768]
+[node name="TextureButton" type="TextureButton" parent="Levels\'Panel/Pages/NextButton" unique_id=1671984768]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
@@ -1001,3 +2405,49 @@ texture_normal = ExtResource("12_mnfw1")
 texture_pressed = ExtResource("13_ty6mb")
 texture_hover = ExtResource("14_0rm5t")
 stretch_mode = 0
+
+[node name="colorrect" type="Node" parent="Levels\'Panel" unique_id=1361771079]
+
+[node name="ColorRect1" type="ColorRect" parent="Levels\'Panel/colorrect" unique_id=54053663]
+modulate = Color(1, 1, 1, 0)
+offset_left = 1118.0
+offset_top = 127.0
+offset_right = 1120.0
+offset_bottom = 128.0
+
+[node name="ColorRect2" type="ColorRect" parent="Levels\'Panel/colorrect" unique_id=346691022]
+modulate = Color(1, 1, 1, 0)
+offset_left = 42.0
+offset_top = 117.0
+offset_right = 43.0
+offset_bottom = 119.0
+
+[node name="ColorRect3" type="ColorRect" parent="Levels\'Panel/colorrect" unique_id=1309669350]
+modulate = Color(1, 1, 1, 0)
+offset_left = 33.0
+offset_top = 127.0
+offset_right = 35.0
+offset_bottom = 128.0
+
+[node name="ColorRect4" type="ColorRect" parent="Levels\'Panel/colorrect" unique_id=1323752678]
+modulate = Color(1, 1, 1, 0)
+offset_left = 42.0
+offset_top = 568.0
+offset_right = 43.0
+offset_bottom = 570.0
+
+[node name="ColorRect5" type="ColorRect" parent="Levels\'Panel/colorrect" unique_id=2014183860]
+modulate = Color(1, 1, 1, 0)
+offset_left = 861.0
+offset_top = 186.0
+offset_right = 863.0
+offset_bottom = 187.0
+
+[node name="ColorRect6" type="ColorRect" parent="Levels\'Panel/colorrect" unique_id=756255884]
+modulate = Color(1, 1, 1, 0)
+offset_left = 265.0
+offset_top = 186.0
+offset_right = 267.0
+offset_bottom = 187.0
+
+[connection signal="pressed" from="Levels\'Panel/backtomainbutton" to="." method="_on_backtomainbutton_pressed"]

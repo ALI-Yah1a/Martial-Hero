@@ -1630,6 +1630,7 @@ script = ExtResource("1_qywvv")
 [node name="DarkQuit" type="ColorRect" parent="." unique_id=1361538177]
 visible = false
 z_index = 3
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1654,6 +1655,7 @@ texture = ExtResource("1_tbmy8")
 expand_mode = 1
 
 [node name="darkoverlay" type="ColorRect" parent="." unique_id=218276102]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1710,6 +1712,7 @@ vertical_alignment = 1
 
 [node name="Main menu panel" type="Panel" parent="." unique_id=454490774]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 layout_mode = 0
 offset_left = 54.0
 offset_top = 109.0
@@ -1745,6 +1748,7 @@ vertical_alignment = 1
 
 [node name="Description" type="Panel" parent="." unique_id=2038097675]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 layout_mode = 0
 offset_left = 524.0
 offset_top = 399.0
@@ -1990,6 +1994,7 @@ stretch_mode = 5
 
 [node name="ColorRect" type="ColorRect" parent="colorrects" unique_id=1670483168]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 offset_left = 90.0
 offset_top = 215.0
 offset_right = 91.0
@@ -1997,6 +2002,7 @@ offset_bottom = 576.0
 
 [node name="ColorRect2" type="ColorRect" parent="colorrects" unique_id=1553730563]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 offset_left = 419.0
 offset_top = 215.0
 offset_right = 420.0
@@ -2004,6 +2010,7 @@ offset_bottom = 577.0
 
 [node name="ColorRect3" type="ColorRect" parent="colorrects" unique_id=972003059]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 offset_left = 107.0
 offset_top = 207.0
 offset_right = 398.0
@@ -2011,6 +2018,7 @@ offset_bottom = 208.0
 
 [node name="ColorRect4" type="ColorRect" parent="colorrects" unique_id=2013328556]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 offset_left = 107.0
 offset_top = 285.0
 offset_right = 398.0
@@ -2018,6 +2026,7 @@ offset_bottom = 286.0
 
 [node name="ColorRect6" type="ColorRect" parent="colorrects" unique_id=907259131]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 offset_left = 107.0
 offset_top = 361.0
 offset_right = 398.0
@@ -2025,6 +2034,7 @@ offset_bottom = 362.0
 
 [node name="ColorRect7" type="ColorRect" parent="colorrects" unique_id=852328216]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 offset_left = 107.0
 offset_top = 437.0
 offset_right = 398.0
@@ -2032,6 +2042,7 @@ offset_bottom = 438.0
 
 [node name="ColorRect8" type="ColorRect" parent="colorrects" unique_id=338792388]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 offset_left = 107.0
 offset_top = 513.0
 offset_right = 398.0
@@ -2039,6 +2050,7 @@ offset_bottom = 514.0
 
 [node name="ColorRect9" type="ColorRect" parent="colorrects" unique_id=1009267465]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 offset_left = 107.0
 offset_top = 593.0
 offset_right = 398.0
@@ -2050,6 +2062,7 @@ autoplay = &"main menu animation"
 
 [node name="Button" type="Button" parent="." unique_id=1728562501]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 layout_mode = 0
 offset_left = 484.0
 offset_top = 440.0
@@ -2084,6 +2097,7 @@ stretch_mode = 0
 
 [node name="Button2" type="Button" parent="." unique_id=1445576187]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 layout_mode = 0
 offset_left = 1043.0
 offset_top = 98.0
@@ -2120,6 +2134,7 @@ stretch_mode = 0
 visible = false
 modulate = Color(1, 1, 1, 0)
 z_index = 5
+texture_filter = 1
 layout_mode = 0
 offset_left = 392.0
 offset_top = 541.0
@@ -2129,6 +2144,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_al4r6")
 
 [node name="Label" type="Label" parent="QuitPopup" unique_id=321691720]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -2153,6 +2169,7 @@ autowrap_mode = 3
 
 [node name="Label2" type="Label" parent="QuitPopup" unique_id=112734548]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -2177,6 +2194,7 @@ autowrap_mode = 3
 
 [node name="ExitPopButton" type="Button" parent="QuitPopup" unique_id=1312374054]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -2217,6 +2235,7 @@ stretch_mode = 5
 
 [node name="BackPopButton" type="Button" parent="QuitPopup" unique_id=1783918310]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
