@@ -277,7 +277,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"attack_1",
-"speed": 15.0
+"speed": 19.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -300,7 +300,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"attack_2",
-"speed": 15.0
+"speed": 18.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -332,7 +332,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"attack_3",
-"speed": 20.0
+"speed": 22.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -398,7 +398,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"hurt",
-"speed": 10.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -486,15 +486,13 @@ height = 44.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t76eq"]
 size = Vector2(44, 40.5)
 
-[node name="Player" type="CharacterBody2D" unique_id=2112703592]
+[node name="Player" type="CharacterBody2D" unique_id=2112703592 groups=["Player"]]
 script = ExtResource("1_tx1dd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1361477983]
 sprite_frames = SubResource("SpriteFrames_t76eq")
-animation = &"attack_3"
+animation = &"attack_1"
 autoplay = "idle"
-frame = 8
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2093667214]
 position = Vector2(6, -3)

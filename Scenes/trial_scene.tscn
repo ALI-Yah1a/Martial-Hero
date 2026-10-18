@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bud2lpcorbaos"]
+
+[ext_resource type="PackedScene" uid="uid://duwtsg3gxgf6u" path="res://Scenes/player.tscn" id="1_s8ceg"]
+[ext_resource type="Texture2D" uid="uid://lrt757ppemc6" path="res://Assets/Tileset/Backgrounds/background 1/1.png" id="2_s1vyc"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_tx1dd"]
+distance = -21.0
+
+[node name="TrialScene" type="Node2D" unique_id=999808586]
+
+[node name="Player" parent="." unique_id=2112703592 instance=ExtResource("1_s8ceg")]
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=538483134]
+zoom = Vector2(3, 3)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=10885233]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1243492140]
+position = Vector2(133.00002, 829)
+scale = Vector2(5, 5)
+texture = ExtResource("2_s1vyc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=988450175]
+shape = SubResource("WorldBoundaryShape2D_tx1dd")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=241421716]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2" unique_id=41176289]
+position = Vector2(1646.0001, 220.00006)
+scale = Vector2(5, 5)
+texture = ExtResource("2_s1vyc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=77142481]
+shape = SubResource("WorldBoundaryShape2D_tx1dd")
