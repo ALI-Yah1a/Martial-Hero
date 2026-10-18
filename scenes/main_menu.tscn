@@ -10,6 +10,15 @@
 [ext_resource type="Texture2D" uid="uid://dvvg6xeeptitq" path="res://Assets/UI/icon/settings (2).png" id="8_5dd4i"]
 [ext_resource type="Texture2D" uid="uid://g7jq3eilwikg" path="res://Assets/UI/icon/settings.png" id="9_lgwnu"]
 [ext_resource type="Texture2D" uid="uid://d1yhib3vuthqv" path="res://Assets/UI/icon/settings (1).png" id="10_flqon"]
+[ext_resource type="Texture2D" uid="uid://dt80be8r6r7l" path="res://Assets/UI/icon/gamepad-directional.png" id="11_hstxw"]
+[ext_resource type="Texture2D" uid="uid://ctocp0e2108e0" path="res://Assets/UI/icon/gamepad-directional (3).png" id="12_8egab"]
+[ext_resource type="Texture2D" uid="uid://ddkr3bk03xw4u" path="res://Assets/UI/icon/gamepad-directional (1).png" id="13_gw5y6"]
+[ext_resource type="Texture2D" uid="uid://cee8ukwr2yf2m" path="res://Assets/UI/icon/handshake (2).png" id="14_svtp6"]
+[ext_resource type="Texture2D" uid="uid://binavtna8cw4t" path="res://Assets/UI/icon/handshake.png" id="15_1dfpl"]
+[ext_resource type="Texture2D" uid="uid://dos0cfky7m66v" path="res://Assets/UI/icon/handshake (1).png" id="16_qywvv"]
+[ext_resource type="Texture2D" uid="uid://dc3vwv1lyire3" path="res://Assets/UI/icon/log-out.png" id="17_3wgol"]
+[ext_resource type="Texture2D" uid="uid://c57834ehb18qk" path="res://Assets/UI/icon/log-out (2).png" id="18_1acrt"]
+[ext_resource type="Texture2D" uid="uid://dfqtmo85cbjhl" path="res://Assets/UI/icon/log-out (1).png" id="19_vr8o3"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_oa1go"]
 
@@ -90,15 +99,6 @@ corner_radius_bottom_left = 6
 shadow_color = Color(0.03137255, 0.05882353, 0.047058824, 1)
 shadow_size = 3
 shadow_offset = Vector2(5, 4)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5dd4i"]
-atlas = ExtResource("5_rtw2f")
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jk1qb"]
-atlas = ExtResource("6_tbmy8")
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lgwnu"]
-atlas = ExtResource("6_oa1go")
 
 [node name="Main menu" type="Control" unique_id=2111193829]
 layout_mode = 3
@@ -183,6 +183,31 @@ offset_right = 445.0
 offset_bottom = 635.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_al4r6")
 
+[node name="game title2" type="Label" parent="Main menu panel" unique_id=289587736]
+z_index = 2
+texture_filter = 1
+material = SubResource("ShaderMaterial_5kuey")
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 29.0
+offset_top = 18.0
+offset_right = -25.0
+offset_bottom = 87.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.94509804, 0.80784315, 1)
+theme_override_colors/font_shadow_color = Color(0.56081814, 0.26254973, 0.055803105, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 7
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 4
+theme_override_fonts/font = ExtResource("3_bqqt6")
+theme_override_font_sizes/font_size = 30
+text = "Select your query"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="NewAdvButton" type="Button" parent="." unique_id=183725262]
 texture_filter = 1
 layout_mode = 0
@@ -245,10 +270,10 @@ script = ExtResource("5_jk1qb")
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.066
-offset_left = 253.0
-offset_top = 10.0
-offset_right = 272.87
-offset_bottom = 50.0
+offset_left = 260.0
+offset_top = 18.0
+offset_right = 271.87
+offset_bottom = 52.0
 texture_normal = ExtResource("8_5dd4i")
 texture_pressed = ExtResource("9_lgwnu")
 texture_hover = ExtResource("10_flqon")
@@ -280,13 +305,13 @@ script = ExtResource("5_jk1qb")
 [node name="TextureButton" type="TextureButton" parent="HowToPlayButton" unique_id=800974154]
 texture_filter = 1
 layout_mode = 0
-offset_left = 266.0
+offset_left = 263.0
 offset_top = 16.0
-offset_right = 291.0
+offset_right = 289.0
 offset_bottom = 50.0
-texture_normal = SubResource("AtlasTexture_5dd4i")
-texture_pressed = SubResource("AtlasTexture_jk1qb")
-texture_hover = SubResource("AtlasTexture_lgwnu")
+texture_normal = ExtResource("11_hstxw")
+texture_pressed = ExtResource("12_8egab")
+texture_hover = ExtResource("13_gw5y6")
 stretch_mode = 5
 
 [node name="CreditsButton" type="Button" parent="." unique_id=1296790989]
@@ -319,9 +344,9 @@ offset_left = 266.0
 offset_top = 16.0
 offset_right = 291.0
 offset_bottom = 50.0
-texture_normal = SubResource("AtlasTexture_5dd4i")
-texture_pressed = SubResource("AtlasTexture_jk1qb")
-texture_hover = SubResource("AtlasTexture_lgwnu")
+texture_normal = ExtResource("14_svtp6")
+texture_pressed = ExtResource("15_1dfpl")
+texture_hover = ExtResource("16_qywvv")
 stretch_mode = 5
 
 [node name="ExitButton" type="Button" parent="." unique_id=933221275]
@@ -354,7 +379,63 @@ offset_left = 266.0
 offset_top = 16.0
 offset_right = 291.0
 offset_bottom = 50.0
-texture_normal = SubResource("AtlasTexture_5dd4i")
-texture_pressed = SubResource("AtlasTexture_jk1qb")
-texture_hover = SubResource("AtlasTexture_lgwnu")
+texture_normal = ExtResource("17_3wgol")
+texture_pressed = ExtResource("18_1acrt")
+texture_hover = ExtResource("19_vr8o3")
 stretch_mode = 5
+
+[node name="colorrects" type="Node" parent="." unique_id=156674540]
+
+[node name="ColorRect" type="ColorRect" parent="colorrects" unique_id=1670483168]
+offset_left = 90.0
+offset_top = 228.0
+offset_right = 91.0
+offset_bottom = 576.0
+
+[node name="ColorRect2" type="ColorRect" parent="colorrects" unique_id=1553730563]
+offset_left = 419.0
+offset_top = 215.0
+offset_right = 420.0
+offset_bottom = 577.0
+
+[node name="ColorRect3" type="ColorRect" parent="colorrects" unique_id=972003059]
+offset_left = 107.0
+offset_top = 202.0
+offset_right = 398.0
+offset_bottom = 203.0
+
+[node name="ColorRect4" type="ColorRect" parent="colorrects" unique_id=2013328556]
+offset_left = 107.0
+offset_top = 285.0
+offset_right = 398.0
+offset_bottom = 286.0
+
+[node name="ColorRect5" type="ColorRect" parent="colorrects" unique_id=773068231]
+offset_left = 107.0
+offset_top = 361.0
+offset_right = 398.0
+offset_bottom = 362.0
+
+[node name="ColorRect6" type="ColorRect" parent="colorrects" unique_id=907259131]
+offset_left = 107.0
+offset_top = 361.0
+offset_right = 398.0
+offset_bottom = 362.0
+
+[node name="ColorRect7" type="ColorRect" parent="colorrects" unique_id=852328216]
+offset_left = 107.0
+offset_top = 437.0
+offset_right = 398.0
+offset_bottom = 438.0
+
+[node name="ColorRect8" type="ColorRect" parent="colorrects" unique_id=338792388]
+offset_left = 107.0
+offset_top = 513.0
+offset_right = 398.0
+offset_bottom = 514.0
+
+[node name="ColorRect9" type="ColorRect" parent="colorrects" unique_id=1009267465]
+offset_left = 107.0
+offset_top = 593.0
+offset_right = 398.0
+offset_bottom = 594.0
