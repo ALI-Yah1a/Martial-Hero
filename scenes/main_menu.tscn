@@ -1,0 +1,360 @@
+[gd_scene format=3 uid="uid://bf8hjp0cbjn5n"]
+
+[ext_resource type="Texture2D" uid="uid://cy7imkq8rw4lt" path="res://Assets/UI/Jungle Pack/Morning/Jungle_Morning_1.jpg" id="1_tbmy8"]
+[ext_resource type="FontFile" uid="uid://dcefqygvimlga" path="res://Assets/UI/Cinzel_Decorative/CinzelDecorative-Bold.ttf" id="3_bqqt6"]
+[ext_resource type="FontFile" uid="uid://bnkmqorloralf" path="res://Assets/UI/Cinzel/static/Cinzel-SemiBold.ttf" id="4_wu84c"]
+[ext_resource type="Script" uid="uid://dup724cqib5t0" path="res://scenes/new_adv_button.gd" id="5_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://dsfgxtkoot62q" path="res://Assets/UI/icon/pickaxe.png" id="5_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://dc1xu4wm6gy0d" path="res://Assets/UI/icon/pickaxe (1).png" id="6_oa1go"]
+[ext_resource type="Texture2D" uid="uid://dv4uw5xiyfgd2" path="res://Assets/UI/icon/pickaxe (2).png" id="6_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://dvvg6xeeptitq" path="res://Assets/UI/icon/settings (2).png" id="8_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://g7jq3eilwikg" path="res://Assets/UI/icon/settings.png" id="9_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://d1yhib3vuthqv" path="res://Assets/UI/icon/settings (1).png" id="10_flqon"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oa1go"]
+
+[sub_resource type="Shader" id="Shader_wu84c"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5kuey"]
+render_priority = 0
+shader = SubResource("Shader_wu84c")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_al4r6"]
+bg_color = Color(0.05882353, 0.1764706, 0.13333334, 0.43137255)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqqt6"]
+bg_color = Color(0.078431375, 0.15294118, 0.12156863, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.40784314, 0.4862745, 0.38039216, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0.03137255, 0.05882353, 0.047058824, 1)
+shadow_size = 3
+shadow_offset = Vector2(5, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ln24"]
+bg_color = Color(0.047058824, 0.105882354, 0.078431375, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.7882353, 0.6039216, 0.24313726, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 5
+shadow_offset = Vector2(5, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wu84c"]
+bg_color = Color(0.21568628, 0.41568628, 0.2784314, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.03137255, 0.05882353, 0.047058824, 1)
+shadow_size = 4
+shadow_offset = Vector2(5, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtw2f"]
+bg_color = Color(0.15686275, 0.32941177, 0.22745098, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0.03137255, 0.05882353, 0.047058824, 1)
+shadow_size = 3
+shadow_offset = Vector2(5, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5dd4i"]
+atlas = ExtResource("5_rtw2f")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jk1qb"]
+atlas = ExtResource("6_tbmy8")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgwnu"]
+atlas = ExtResource("6_oa1go")
+
+[node name="Main menu" type="Control" unique_id=2111193829]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DistantLayer" type="TextureRect" parent="." unique_id=497958423]
+texture_filter = 1
+texture_repeat = 2
+material = SubResource("ShaderMaterial_oa1go")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_tbmy8")
+expand_mode = 1
+
+[node name="darkoverlay" type="ColorRect" parent="." unique_id=218276102]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.39215687)
+
+[node name="game title" type="Label" parent="." unique_id=1127813218]
+z_index = 2
+texture_filter = 1
+material = SubResource("ShaderMaterial_5kuey")
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 96.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.94509804, 0.80784315, 1)
+theme_override_colors/font_shadow_color = Color(0.56081814, 0.26254973, 0.055803105, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 7
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 4
+theme_override_fonts/font = ExtResource("3_bqqt6")
+theme_override_font_sizes/font_size = 60
+text = "MARTIAL-HERO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="glow title" type="Label" parent="." unique_id=705344337]
+z_index = 1
+texture_filter = 1
+material = SubResource("ShaderMaterial_5kuey")
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 96.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.5803922, 0.12156863, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.2901961, 0.05490196, 0.95686275)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("3_bqqt6")
+theme_override_font_sizes/font_size = 58
+text = "MARTIAL-HERO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Main menu panel" type="Panel" parent="." unique_id=454490774]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 109.0
+offset_right = 445.0
+offset_bottom = 635.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_al4r6")
+
+[node name="NewAdvButton" type="Button" parent="." unique_id=183725262]
+texture_filter = 1
+layout_mode = 0
+offset_left = 101.0
+offset_top = 214.0
+offset_right = 406.0
+offset_bottom = 281.0
+theme_override_colors/font_color = Color(0.84705883, 0.8745098, 0.7882353, 1)
+theme_override_colors/font_focus_color = Color(0.95686275, 0.9137255, 0.80784315, 1)
+theme_override_colors/font_pressed_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/line_spacing = 14
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_bqqt6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8ln24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rtw2f")
+text = " NEW ADVENTURE      "
+autowrap_mode = 3
+script = ExtResource("5_jk1qb")
+
+[node name="TextureButton" type="TextureButton" parent="NewAdvButton" unique_id=600611038]
+texture_filter = 1
+layout_mode = 0
+offset_left = 266.0
+offset_top = 16.0
+offset_right = 291.0
+offset_bottom = 50.0
+texture_normal = ExtResource("5_rtw2f")
+texture_pressed = ExtResource("6_tbmy8")
+texture_hover = ExtResource("6_oa1go")
+stretch_mode = 5
+
+[node name="SettingsButton" type="Button" parent="." unique_id=1503166503]
+texture_filter = 1
+layout_mode = 0
+offset_left = 101.0
+offset_top = 290.0
+offset_right = 406.0
+offset_bottom = 357.0
+theme_override_colors/font_color = Color(0.84705883, 0.8745098, 0.7882353, 1)
+theme_override_colors/font_focus_color = Color(0.95686275, 0.9137255, 0.80784315, 1)
+theme_override_colors/font_pressed_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/line_spacing = 14
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_bqqt6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8ln24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rtw2f")
+text = " SETTINGS      "
+autowrap_mode = 3
+script = ExtResource("5_jk1qb")
+
+[node name="TextureButton" type="TextureButton" parent="SettingsButton" unique_id=1090610953]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.066
+offset_left = 253.0
+offset_top = 10.0
+offset_right = 272.87
+offset_bottom = 50.0
+texture_normal = ExtResource("8_5dd4i")
+texture_pressed = ExtResource("9_lgwnu")
+texture_hover = ExtResource("10_flqon")
+stretch_mode = 0
+
+[node name="HowToPlayButton" type="Button" parent="." unique_id=567822590]
+texture_filter = 1
+layout_mode = 0
+offset_left = 101.0
+offset_top = 366.0
+offset_right = 406.0
+offset_bottom = 433.0
+theme_override_colors/font_color = Color(0.84705883, 0.8745098, 0.7882353, 1)
+theme_override_colors/font_focus_color = Color(0.95686275, 0.9137255, 0.80784315, 1)
+theme_override_colors/font_pressed_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/line_spacing = 14
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_bqqt6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8ln24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rtw2f")
+text = "HOW TO PLAY      "
+autowrap_mode = 3
+script = ExtResource("5_jk1qb")
+
+[node name="TextureButton" type="TextureButton" parent="HowToPlayButton" unique_id=800974154]
+texture_filter = 1
+layout_mode = 0
+offset_left = 266.0
+offset_top = 16.0
+offset_right = 291.0
+offset_bottom = 50.0
+texture_normal = SubResource("AtlasTexture_5dd4i")
+texture_pressed = SubResource("AtlasTexture_jk1qb")
+texture_hover = SubResource("AtlasTexture_lgwnu")
+stretch_mode = 5
+
+[node name="CreditsButton" type="Button" parent="." unique_id=1296790989]
+texture_filter = 1
+layout_mode = 0
+offset_left = 101.0
+offset_top = 441.0
+offset_right = 406.0
+offset_bottom = 508.0
+theme_override_colors/font_color = Color(0.84705883, 0.8745098, 0.7882353, 1)
+theme_override_colors/font_focus_color = Color(0.95686275, 0.9137255, 0.80784315, 1)
+theme_override_colors/font_pressed_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/line_spacing = 14
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_bqqt6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8ln24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rtw2f")
+text = " CREDITS      "
+autowrap_mode = 3
+script = ExtResource("5_jk1qb")
+
+[node name="TextureButton" type="TextureButton" parent="CreditsButton" unique_id=1668436409]
+texture_filter = 1
+layout_mode = 0
+offset_left = 266.0
+offset_top = 16.0
+offset_right = 291.0
+offset_bottom = 50.0
+texture_normal = SubResource("AtlasTexture_5dd4i")
+texture_pressed = SubResource("AtlasTexture_jk1qb")
+texture_hover = SubResource("AtlasTexture_lgwnu")
+stretch_mode = 5
+
+[node name="ExitButton" type="Button" parent="." unique_id=933221275]
+texture_filter = 1
+layout_mode = 0
+offset_left = 101.0
+offset_top = 519.0
+offset_right = 406.0
+offset_bottom = 586.0
+theme_override_colors/font_color = Color(0.84705883, 0.8745098, 0.7882353, 1)
+theme_override_colors/font_focus_color = Color(0.95686275, 0.9137255, 0.80784315, 1)
+theme_override_colors/font_pressed_color = Color(0.9019608, 0.73333335, 0.36078432, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/line_spacing = 14
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_bqqt6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8ln24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rtw2f")
+text = " EXITS      "
+autowrap_mode = 3
+script = ExtResource("5_jk1qb")
+
+[node name="TextureButton" type="TextureButton" parent="ExitButton" unique_id=2011604134]
+texture_filter = 1
+layout_mode = 0
+offset_left = 266.0
+offset_top = 16.0
+offset_right = 291.0
+offset_bottom = 50.0
+texture_normal = SubResource("AtlasTexture_5dd4i")
+texture_pressed = SubResource("AtlasTexture_jk1qb")
+texture_hover = SubResource("AtlasTexture_lgwnu")
+stretch_mode = 5

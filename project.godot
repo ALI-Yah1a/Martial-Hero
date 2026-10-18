@@ -11,11 +11,13 @@ config_version=5
 [application]
 
 config/name="Martial-Hero"
+run/main_scene="uid://bf8hjp0cbjn5n"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
