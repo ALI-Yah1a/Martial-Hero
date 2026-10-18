@@ -140,8 +140,8 @@ func die() -> void:
 	await get_tree().create_timer(0.5).timeout
 	
 	var ui = get_tree().get_root().find_child("Level_UI", true, false)
-	if ui and ui.has_method("add_zombie_kill"):
-		ui.add_zombie_kill(1)
+	if ui and ui.has_method("add_gorgon_kill"):
+		ui.add_gorgon_kill(1)
 		
 	queue_free()
 

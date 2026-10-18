@@ -86,7 +86,7 @@ func start_attack() -> void:
 	velocity.x = 0
 	if animated_sprite_2d.sprite_frames.has_animation("attack"):
 		animated_sprite_2d.play("attack")
-		await get_tree().create_timer(0.8).timeout
+		await get_tree().create_timer(0.5).timeout
 		if is_attacking and is_alive and not is_hurt and is_instance_valid(player_ref):
 			if global_position.distance_to(player_ref.global_position) <= attack_range + 20.0:
 				if player_ref.has_method("take_damage"):
@@ -129,8 +129,8 @@ func die() -> void:
 	await get_tree().create_timer(0.5).timeout
 	
 	var ui = get_tree().get_root().find_child("Level_UI", true, false)
-	if ui and ui.has_method("add_zombie_kill"):
-		ui.add_zombie_kill(1)
+	if ui and ui.has_method("add_gorgon_kill"):
+		ui.add_gorgon_kill(1)
 		
 	queue_free()
 

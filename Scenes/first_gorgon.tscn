@@ -363,10 +363,8 @@ script = ExtResource("1_r51e0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=52053815]
 sprite_frames = SubResource("SpriteFrames_t76eq")
-animation = &"attack"
+animation = &"idle"
 autoplay = "idle"
-frame = 9
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1422867680]
 position = Vector2(-5.833333, 24)
@@ -387,7 +385,6 @@ position = Vector2(22, 17)
 target_position = Vector2(-0.33333397, 56.33333)
 
 [node name="DetectionArea" type="Area2D" parent="." unique_id=623946619]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=902682912]
 position = Vector2(2.4999928, 24)

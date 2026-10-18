@@ -209,7 +209,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"death",
-"speed": 10.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -323,7 +323,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c3kvf"]
-size = Vector2(60.33333, 79)
+size = Vector2(66.66666, 79)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7khpe"]
 atlas = ExtResource("7_brbke")
@@ -342,13 +342,11 @@ script = ExtResource("1_iqmaw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=174363159]
 sprite_frames = SubResource("SpriteFrames_q1em1")
-animation = &"attack"
+animation = &"walk"
 autoplay = "idle"
-frame = 6
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1699259588]
-position = Vector2(-3.166665, 24)
+position = Vector2(9.934107e-07, 24)
 shape = SubResource("RectangleShape2D_c3kvf")
 
 [node name="HealthBar" type="TextureProgressBar" parent="." unique_id=1513312874]
