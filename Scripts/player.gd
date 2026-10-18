@@ -4,14 +4,14 @@ class_name Player
 @onready var hitbox: Area2D = $Hitbox
 
 const SPEED = 170
-const JUMP_VELOCITY = -400
+const JUMP_VELOCITY = -450
 
 var is_attacking = false
 var can_attack = true
 var is_hurt = false
 
-var max_health = 100
-var current_health = 100
+var max_health = 10
+var current_health = 10
 signal health_changed(new_health)
 func _input(event) -> void:
 	if is_hurt:

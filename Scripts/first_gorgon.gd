@@ -7,7 +7,7 @@ extends CharacterBody2D
 
 var speed = 80
 var chase_speed = 120
-var attack_range = 44
+var attack_range = 62
 var attack_cooldown = 0.8
 var direction = 1 
 var max_hp = 2
@@ -139,9 +139,9 @@ func die() -> void:
 	collision_shape_2d.set_deferred("disabled", true)
 	await get_tree().create_timer(0.5).timeout
 	
-	var ui = get_tree().get_root().find_child("Level_UI", true, false)
-	if ui and ui.has_method("add_gorgon_kill"):
-		ui.add_gorgon_kill(1)
+	var ui = get_tree().get_root().find_child("LevelUI", true, false)
+	if ui and ui.has_method("add_gorgon"):
+		ui.add_gorgon(1)
 		
 	queue_free()
 

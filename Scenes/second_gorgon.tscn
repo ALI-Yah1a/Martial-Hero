@@ -337,7 +337,7 @@ region = Rect2(199, 176, 82, 4)
 size = Vector2(411.66666, 80)
 
 [node name="SecondGorgon" type="CharacterBody2D" unique_id=555729989 groups=["Enemy"]]
-scale = Vector2(0.6, 0.6)
+scale = Vector2(0.72, 0.72)
 script = ExtResource("1_iqmaw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=174363159]
