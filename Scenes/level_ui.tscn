@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://d036mii5cru55" path="res://Assets/HUD/Base-01.png" id="1_xdjqv"]
 [ext_resource type="Texture2D" uid="uid://darawvlnshmai" path="res://Assets/Martial Hero/martial_hero_icon.png" id="2_u4a2s"]
 [ext_resource type="Texture2D" uid="uid://bo6t42fe3wlxy" path="res://Assets/HUD/32x32-Tilesheet.png" id="3_2qe5m"]
+[ext_resource type="Texture2D" uid="uid://d0fwil81cq0fj" path="res://Assets/Pickup/coin.png" id="4_ao4gj"]
+[ext_resource type="FontFile" uid="uid://dnx32cxtk8jx5" path="res://Assets/Pixel Game.otf" id="5_ai2e2"]
+[ext_resource type="Texture2D" uid="uid://bsp406dqlu41j" path="res://Assets/Gorgons/gorgon_icon.png" id="6_htk61"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t76eq"]
 atlas = ExtResource("1_xdjqv")
@@ -16,13 +19,54 @@ region = Rect2(197, 135, 86, 15)
 atlas = ExtResource("3_2qe5m")
 region = Rect2(295, 176, 82, 4)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_uj7jq"]
+atlas = ExtResource("4_ao4gj")
+region = Rect2(1, 1, 18, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fjexk"]
+atlas = ExtResource("3_2qe5m")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t76eq"]
+texture = ExtResource("3_2qe5m")
+region_rect = Rect2(0, 320, 64, 32)
+modulate_color = Color(0.34117648, 0.44705883, 0.36862746, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uj7jq"]
+texture = ExtResource("3_2qe5m")
+region_rect = Rect2(0, 320, 64, 32)
+modulate_color = Color(0.41568628, 0.5372549, 0.44705883, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fjexk"]
+texture = ExtResource("3_2qe5m")
+region_rect = Rect2(0, 320, 64, 32)
+modulate_color = Color(0.27058825, 0.3647059, 0.29803923, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m0ht2"]
+texture = ExtResource("3_2qe5m")
+region_rect = Rect2(0, 320, 64, 32)
+modulate_color = Color(0.34117648, 0.44705883, 0.36862746, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g1idy"]
+texture = ExtResource("3_2qe5m")
+region_rect = Rect2(0, 320, 64, 32)
+modulate_color = Color(0.41568628, 0.5372549, 0.44705883, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_imobx"]
+texture = ExtResource("3_2qe5m")
+region_rect = Rect2(0, 320, 64, 32)
+modulate_color = Color(0.27058825, 0.3647059, 0.29803923, 1)
+
 [node name="LevelUI" type="CanvasLayer" unique_id=469915797 groups=["UI"]]
 
 [node name="HUD" type="Control" parent="." unique_id=38721602]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -22.0
+offset_top = -22.000004
+offset_right = 18.0
+offset_bottom = 17.999996
+scale = Vector2(1.4, 1.4)
 
 [node name="PlayerStats" type="HBoxContainer" parent="HUD" unique_id=460630330]
 layout_mode = 0
@@ -48,41 +92,165 @@ texture = ExtResource("2_u4a2s")
 [node name="VitalsAndStats" type="VBoxContainer" parent="HUD/PlayerStats" unique_id=607839486]
 layout_mode = 2
 
-[node name="TextureProgressBar" type="TextureProgressBar" parent="HUD/PlayerStats/VitalsAndStats" unique_id=477387949]
+[node name="Control" type="Control" parent="HUD/PlayerStats/VitalsAndStats" unique_id=2090848470]
 layout_mode = 2
+
+[node name="HealthBar" type="TextureProgressBar" parent="HUD/PlayerStats/VitalsAndStats/Control" unique_id=477387949]
+layout_mode = 0
+offset_left = 1.6666665
+offset_top = -7.6666675
+offset_right = 87.666664
+offset_bottom = 7.3333325
+scale = Vector2(2.5, 2.5)
 value = 100.0
 texture_under = SubResource("AtlasTexture_g1idy")
 texture_progress = SubResource("AtlasTexture_imobx")
 texture_progress_offset = Vector2(2, 9)
 
-[node name="CoinsTracker" type="HBoxContainer" parent="HUD/PlayerStats/VitalsAndStats" unique_id=2052287515]
+[node name="Control2" type="Control" parent="HUD/PlayerStats/VitalsAndStats" unique_id=813776381]
 layout_mode = 2
 
-[node name="CoinIcon" type="TextureRect" parent="HUD/PlayerStats/VitalsAndStats/CoinsTracker" unique_id=145735796]
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/PlayerStats/VitalsAndStats/Control2" unique_id=1498958250]
+layout_mode = 0
+offset_left = 11.285717
+offset_top = 29.666668
+offset_right = 75.28572
+offset_bottom = 108.66667
+scale = Vector2(2, 2)
+
+[node name="CoinsTracker" type="HBoxContainer" parent="HUD/PlayerStats/VitalsAndStats/Control2/VBoxContainer" unique_id=2052287515]
 layout_mode = 2
 
-[node name="CoinsLabel" type="Label" parent="HUD/PlayerStats/VitalsAndStats/CoinsTracker" unique_id=1557012617]
+[node name="CoinIcon" type="TextureRect" parent="HUD/PlayerStats/VitalsAndStats/Control2/VBoxContainer/CoinsTracker" unique_id=145735796]
+layout_mode = 2
+texture = SubResource("AtlasTexture_uj7jq")
+stretch_mode = 5
+
+[node name="CoinsLabel" type="Label" parent="HUD/PlayerStats/VitalsAndStats/Control2/VBoxContainer/CoinsTracker" unique_id=1557012617]
+layout_mode = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("5_ai2e2")
+theme_override_font_sizes/font_size = 22
+text = "10/10"
+
+[node name="GorgonsTracker" type="HBoxContainer" parent="HUD/PlayerStats/VitalsAndStats/Control2/VBoxContainer" unique_id=903190651]
 layout_mode = 2
 
-[node name="GorgonsTracker" type="HBoxContainer" parent="HUD/PlayerStats/VitalsAndStats" unique_id=903190651]
+[node name="GorgonIcon" type="TextureRect" parent="HUD/PlayerStats/VitalsAndStats/Control2/VBoxContainer/GorgonsTracker" unique_id=575515379]
+custom_maximum_size = Vector2(20, 20)
 layout_mode = 2
+texture = ExtResource("6_htk61")
+stretch_mode = 5
 
-[node name="GorgonIcon" type="TextureRect" parent="HUD/PlayerStats/VitalsAndStats/GorgonsTracker" unique_id=575515379]
+[node name="GorgonLabel" type="Label" parent="HUD/PlayerStats/VitalsAndStats/Control2/VBoxContainer/GorgonsTracker" unique_id=970510831]
 layout_mode = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("5_ai2e2")
+theme_override_font_sizes/font_size = 22
+text = "10/10"
 
-[node name="GorgonLabel" type="Label" parent="HUD/PlayerStats/VitalsAndStats/GorgonsTracker" unique_id=970510831]
+[node name="CurrentLevelLabel" type="Label" parent="HUD/PlayerStats/VitalsAndStats/Control2/VBoxContainer" unique_id=928679182]
 layout_mode = 2
-
-[node name="CurrentLevelLabel" type="Label" parent="HUD/PlayerStats/VitalsAndStats" unique_id=928679182]
-layout_mode = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("5_ai2e2")
+theme_override_font_sizes/font_size = 24
+text = "Level 1"
 
 [node name="PauseMenu" type="Control" parent="." unique_id=1686111363]
+process_mode = 3
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="PauseMenu" unique_id=1333185052]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.39607844)
+
+[node name="NinePatchRect" type="NinePatchRect" parent="PauseMenu" unique_id=67369627]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -300.0
+offset_right = 300.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.3, 1.3)
+pivot_offset = Vector2(302, 302)
+texture = SubResource("AtlasTexture_fjexk")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/NinePatchRect" unique_id=1980285731]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="Control2" type="Control" parent="PauseMenu/NinePatchRect/VBoxContainer" unique_id=1141968921]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="PauseMenu/NinePatchRect/VBoxContainer/Control2" unique_id=506789841]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 125.0
+offset_right = 584.0
+offset_bottom = 227.0
+theme_override_colors/font_color = Color(0.65344477, 0, 0.15592867, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("5_ai2e2")
+theme_override_font_sizes/font_size = 80
+text = "MARTIAL HERO"
+
+[node name="Control" type="Control" parent="PauseMenu/NinePatchRect/VBoxContainer" unique_id=1261247915]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/NinePatchRect/VBoxContainer/Control" unique_id=917386204]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 235.0
+offset_right = 532.0
+offset_bottom = 539.0
+theme_override_constants/separation = 20
+
+[node name="ResumeButton" type="Button" parent="PauseMenu/NinePatchRect/VBoxContainer/Control/VBoxContainer" unique_id=707787654]
+custom_minimum_size = Vector2(440, 120)
+custom_maximum_size = Vector2(440, 120)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8627451, 0.8627451, 0.8627451, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = ExtResource("5_ai2e2")
+theme_override_font_sizes/font_size = 120
+theme_override_styles/normal = SubResource("StyleBoxTexture_t76eq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_uj7jq")
+theme_override_styles/hover = SubResource("StyleBoxTexture_fjexk")
+text = "RESUME"
+
+[node name="MainMenuButton" type="Button" parent="PauseMenu/NinePatchRect/VBoxContainer/Control/VBoxContainer" unique_id=814237878]
+custom_minimum_size = Vector2(440, 120)
+custom_maximum_size = Vector2(440, 120)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.86381346, 0.8638138, 0.8638136, 1)
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = ExtResource("5_ai2e2")
+theme_override_font_sizes/font_size = 110
+theme_override_styles/normal = SubResource("StyleBoxTexture_m0ht2")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_g1idy")
+theme_override_styles/hover = SubResource("StyleBoxTexture_imobx")
+text = "MAIN MENU"
+
 [node name="LevelCompleteMenu" type="Control" parent="." unique_id=140316735]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
