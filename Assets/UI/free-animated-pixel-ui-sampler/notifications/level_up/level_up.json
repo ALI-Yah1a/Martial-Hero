@@ -1,0 +1,63 @@
+{
+  "name": "level_up",
+  "frame_width": 168,
+  "frame_height": 96,
+  "frame_count": 8,
+  "loop": false,
+  "text_rect": [
+    36,
+    41,
+    96,
+    14
+  ],
+  "frames": [
+    {
+      "file": "frames/level_up_00.png",
+      "x": 0,
+      "y": 0,
+      "duration_ms": 40
+    },
+    {
+      "file": "frames/level_up_01.png",
+      "x": 168,
+      "y": 0,
+      "duration_ms": 40
+    },
+    {
+      "file": "frames/level_up_02.png",
+      "x": 336,
+      "y": 0,
+      "duration_ms": 50
+    },
+    {
+      "file": "frames/level_up_03.png",
+      "x": 504,
+      "y": 0,
+      "duration_ms": 50
+    },
+    {
+      "file": "frames/level_up_04.png",
+      "x": 672,
+      "y": 0,
+      "duration_ms": 60
+    },
+    {
+      "file": "frames/level_up_05.png",
+      "x": 840,
+      "y": 0,
+      "duration_ms": 60
+    },
+    {
+      "file": "frames/level_up_06.png",
+      "x": 1008,
+      "y": 0,
+      "duration_ms": 70
+    },
+    {
+      "file": "frames/level_up_07.png",
+      "x": 1176,
+      "y": 0,
+      "duration_ms": 80
+    }
+  ]
+}

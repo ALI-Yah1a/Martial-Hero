@@ -1,0 +1,58 @@
+{
+  "name": "item_legendary_glow_loop",
+  "frame_width": 250,
+  "frame_height": 120,
+  "frame_count": 6,
+  "loop": true,
+  "icon_rect": [
+    44,
+    44,
+    32,
+    32
+  ],
+  "text_rect": [
+    86,
+    48,
+    116,
+    24
+  ],
+  "note": "item_<rarity>_pop then loop item_<rarity>_glow_loop; draw the item icon in icon_rect.",
+  "frames": [
+    {
+      "file": "frames/item_legendary_glow_loop_00.png",
+      "x": 0,
+      "y": 0,
+      "duration_ms": 110
+    },
+    {
+      "file": "frames/item_legendary_glow_loop_01.png",
+      "x": 250,
+      "y": 0,
+      "duration_ms": 110
+    },
+    {
+      "file": "frames/item_legendary_glow_loop_02.png",
+      "x": 500,
+      "y": 0,
+      "duration_ms": 110
+    },
+    {
+      "file": "frames/item_legendary_glow_loop_03.png",
+      "x": 750,
+      "y": 0,
+      "duration_ms": 110
+    },
+    {
+      "file": "frames/item_legendary_glow_loop_04.png",
+      "x": 1000,
+      "y": 0,
+      "duration_ms": 110
+    },
+    {
+      "file": "frames/item_legendary_glow_loop_05.png",
+      "x": 1250,
+      "y": 0,
+      "duration_ms": 110
+    }
+  ]
+}

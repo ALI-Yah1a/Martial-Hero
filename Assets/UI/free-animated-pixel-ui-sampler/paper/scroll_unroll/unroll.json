@@ -1,0 +1,135 @@
+{
+  "name": "unroll",
+  "frame_width": 240,
+  "frame_height": 300,
+  "frame_count": 17,
+  "loop": false,
+  "paper_rect": [
+    32,
+    22,
+    176,
+    232
+  ],
+  "note": "paper_rect = x, y, w, h of the fully unrolled paper inside the frame. paper_visible_height per frame tells how much of it is revealed (from the top) - clip your own text to it, or draw text on the last frame.",
+  "frames": [
+    {
+      "file": "frames/unroll_00.png",
+      "x": 0,
+      "y": 0,
+      "duration_ms": 120,
+      "paper_visible_height": 0
+    },
+    {
+      "file": "frames/unroll_01.png",
+      "x": 240,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 4
+    },
+    {
+      "file": "frames/unroll_02.png",
+      "x": 480,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 17
+    },
+    {
+      "file": "frames/unroll_03.png",
+      "x": 720,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 36
+    },
+    {
+      "file": "frames/unroll_04.png",
+      "x": 960,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 60
+    },
+    {
+      "file": "frames/unroll_05.png",
+      "x": 1200,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 87
+    },
+    {
+      "file": "frames/unroll_06.png",
+      "x": 1440,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 116
+    },
+    {
+      "file": "frames/unroll_07.png",
+      "x": 1680,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 144
+    },
+    {
+      "file": "frames/unroll_08.png",
+      "x": 1920,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 171
+    },
+    {
+      "file": "frames/unroll_09.png",
+      "x": 2160,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 195
+    },
+    {
+      "file": "frames/unroll_10.png",
+      "x": 2400,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 214
+    },
+    {
+      "file": "frames/unroll_11.png",
+      "x": 2640,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 227
+    },
+    {
+      "file": "frames/unroll_12.png",
+      "x": 2880,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 232
+    },
+    {
+      "file": "frames/unroll_13.png",
+      "x": 3120,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 232
+    },
+    {
+      "file": "frames/unroll_14.png",
+      "x": 3360,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 230
+    },
+    {
+      "file": "frames/unroll_15.png",
+      "x": 3600,
+      "y": 0,
+      "duration_ms": 55,
+      "paper_visible_height": 232
+    },
+    {
+      "file": "frames/unroll_16.png",
+      "x": 3840,
+      "y": 0,
+      "duration_ms": 60,
+      "paper_visible_height": 232
+    }
+  ]
+}

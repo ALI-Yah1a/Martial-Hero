@@ -1,0 +1,80 @@
+{
+ "dairy_bogo_spawn": {
+  "file": "dairy_bogo_spawn.png",
+  "w": 116,
+  "h": 132,
+  "frames": 5,
+  "ms": [
+   50,
+   50,
+   50,
+   50,
+   50
+  ],
+  "loop": false,
+  "rest": [
+   10,
+   10
+  ],
+  "size": [
+   96,
+   96
+  ]
+ },
+ "dairy_bogo_tear": {
+  "file": "dairy_bogo_tear.png",
+  "w": 120,
+  "h": 132,
+  "frames": 10,
+  "ms": [
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60
+  ],
+  "loop": false,
+  "rest": [
+   10,
+   10
+  ],
+  "size": [
+   96,
+   96
+  ]
+ },
+ "dairy_bogo_burn": {
+  "file": "dairy_bogo_burn.png",
+  "w": 116,
+  "h": 132,
+  "frames": 12,
+  "ms": [
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70
+  ],
+  "loop": false,
+  "rest": [
+   10,
+   10
+  ],
+  "size": [
+   96,
+   96
+  ]
+ }
+}

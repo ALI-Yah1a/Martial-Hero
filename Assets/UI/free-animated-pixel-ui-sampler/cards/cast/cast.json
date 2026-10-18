@@ -1,0 +1,87 @@
+{
+ "name": "cast",
+ "frame_width": 88,
+ "frame_height": 112,
+ "frame_count": 12,
+ "loop": false,
+ "card_rect": [
+  16,
+  16,
+  56,
+  80
+ ],
+ "frames": [
+  {
+   "file": "frames/cast_00.png",
+   "x": 0,
+   "y": 0,
+   "duration_ms": 50
+  },
+  {
+   "file": "frames/cast_01.png",
+   "x": 88,
+   "y": 0,
+   "duration_ms": 50
+  },
+  {
+   "file": "frames/cast_02.png",
+   "x": 176,
+   "y": 0,
+   "duration_ms": 50
+  },
+  {
+   "file": "frames/cast_03.png",
+   "x": 264,
+   "y": 0,
+   "duration_ms": 50
+  },
+  {
+   "file": "frames/cast_04.png",
+   "x": 352,
+   "y": 0,
+   "duration_ms": 50
+  },
+  {
+   "file": "frames/cast_05.png",
+   "x": 440,
+   "y": 0,
+   "duration_ms": 50
+  },
+  {
+   "file": "frames/cast_06.png",
+   "x": 528,
+   "y": 0,
+   "duration_ms": 50
+  },
+  {
+   "file": "frames/cast_07.png",
+   "x": 616,
+   "y": 0,
+   "duration_ms": 50
+  },
+  {
+   "file": "frames/cast_08.png",
+   "x": 704,
+   "y": 0,
+   "duration_ms": 50
+  },
+  {
+   "file": "frames/cast_09.png",
+   "x": 792,
+   "y": 0,
+   "duration_ms": 50
+  },
+  {
+   "file": "frames/cast_10.png",
+   "x": 880,
+   "y": 0,
+   "duration_ms": 50
+  },
+  {
+   "file": "frames/cast_11.png",
+   "x": 968,
+   "y": 0,
+   "duration_ms": 50
+  }
+ ]
+}

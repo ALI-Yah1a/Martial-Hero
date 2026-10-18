@@ -1,0 +1,111 @@
+{
+ "name": "burn",
+ "frame_width": 88,
+ "frame_height": 112,
+ "frame_count": 16,
+ "loop": false,
+ "card_rect": [
+  16,
+  16,
+  56,
+  80
+ ],
+ "frames": [
+  {
+   "file": "frames/burn_00.png",
+   "x": 0,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_01.png",
+   "x": 88,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_02.png",
+   "x": 176,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_03.png",
+   "x": 264,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_04.png",
+   "x": 352,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_05.png",
+   "x": 440,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_06.png",
+   "x": 528,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_07.png",
+   "x": 616,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_08.png",
+   "x": 704,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_09.png",
+   "x": 792,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_10.png",
+   "x": 880,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_11.png",
+   "x": 968,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_12.png",
+   "x": 1056,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_13.png",
+   "x": 1144,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_14.png",
+   "x": 1232,
+   "y": 0,
+   "duration_ms": 55
+  },
+  {
+   "file": "frames/burn_15.png",
+   "x": 1320,
+   "y": 0,
+   "duration_ms": 55
+  }
+ ]
+}

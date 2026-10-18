@@ -1,0 +1,45 @@
+{
+  "name": "continue_loop",
+  "frame_width": 11,
+  "frame_height": 12,
+  "frame_count": 6,
+  "loop": true,
+  "frames": [
+    {
+      "file": "frames/continue_loop_00.png",
+      "x": 0,
+      "y": 0,
+      "duration_ms": 120
+    },
+    {
+      "file": "frames/continue_loop_01.png",
+      "x": 11,
+      "y": 0,
+      "duration_ms": 90
+    },
+    {
+      "file": "frames/continue_loop_02.png",
+      "x": 22,
+      "y": 0,
+      "duration_ms": 90
+    },
+    {
+      "file": "frames/continue_loop_03.png",
+      "x": 33,
+      "y": 0,
+      "duration_ms": 110
+    },
+    {
+      "file": "frames/continue_loop_04.png",
+      "x": 44,
+      "y": 0,
+      "duration_ms": 90
+    },
+    {
+      "file": "frames/continue_loop_05.png",
+      "x": 55,
+      "y": 0,
+      "duration_ms": 90
+    }
+  ]
+}
