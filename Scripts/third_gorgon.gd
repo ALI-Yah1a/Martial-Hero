@@ -7,7 +7,7 @@ extends CharacterBody2D
 
 var speed = 80 
 var chase_speed = 120
-var attack_range = 44
+var attack_range = 62
 var attack_cooldown = 0.8
 var direction = 1
 var is_chasing = false

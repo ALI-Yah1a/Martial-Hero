@@ -79,13 +79,14 @@ animations = [{
 size = Vector2(18, 18)
 
 [node name="Coin" type="Area2D" unique_id=470749127]
+scale = Vector2(1.2, 1.2)
 script = ExtResource("1_g537i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1837660588]
 sprite_frames = SubResource("SpriteFrames_t76eq")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.1779777
+frame_progress = 0.43596563
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2096046738]
 shape = SubResource("RectangleShape2D_m0ht2")

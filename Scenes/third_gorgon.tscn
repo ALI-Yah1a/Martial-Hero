@@ -358,14 +358,15 @@ region = Rect2(199, 176, 82, 4)
 size = Vector2(411.66666, 80)
 
 [node name="ThirdGorgon" type="CharacterBody2D" unique_id=268938600 groups=["Enemy"]]
-scale = Vector2(0.6, 0.6)
+position = Vector2(3.0000005, 0)
+scale = Vector2(0.72, 0.72)
 script = ExtResource("1_v44jm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1689339866]
 sprite_frames = SubResource("SpriteFrames_t76eq")
 animation = &"walk"
 autoplay = "idle"
-frame_progress = 0.6103251
+frame_progress = 0.16563453
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1876678854]
 position = Vector2(0, 24)

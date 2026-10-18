@@ -4,7 +4,7 @@ class_name Player
 @onready var hitbox: Area2D = $Hitbox
 
 const SPEED = 170
-const JUMP_VELOCITY = -400
+const JUMP_VELOCITY = -450
 
 var is_attacking = false
 var can_attack = true
