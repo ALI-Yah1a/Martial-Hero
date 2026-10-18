@@ -1974,7 +1974,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_bqqt6")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_8ln24")
 theme_override_styles/hover = SubResource("StyleBoxFlat_wu84c")
 theme_override_styles/focus = SubResource("StyleBoxFlat_rtw2f")
-text = " EXITS      "
+text = " EXIT      "
 autowrap_mode = 3
 script = ExtResource("5_jk1qb")
 

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://5vp70n4jbxve"]
 
-[ext_resource type="Script" uid="uid://d1bn6281frvcn" path="res://scripts/levels.gd" id="1_ly2og"]
+[ext_resource type="Script" uid="uid://dskq570hmahac" path="res://scripts/levels.gd" id="1_ly2og"]
 [ext_resource type="Texture2D" uid="uid://b1ifwgbmqdp3x" path="res://Assets/UI/Jungle Pack/Afternoon/Jungle_Afternoon_1.jpg" id="2_jj4e6"]
 [ext_resource type="FontFile" uid="uid://dcefqygvimlga" path="res://Assets/UI/Cinzel_Decorative/CinzelDecorative-Bold.ttf" id="3_byla0"]
 [ext_resource type="Texture2D" uid="uid://cus54j01jlvue" path="res://Assets/UI/free-animated-pixel-ui-sampler/book/close/close_sheet.png" id="4_clqd7"]
@@ -2451,3 +2451,4 @@ offset_right = 267.0
 offset_bottom = 187.0
 
 [connection signal="pressed" from="Levels\'Panel/backtomainbutton" to="." method="_on_backtomainbutton_pressed"]
+[connection signal="pressed" from="Levels\'Panel/Pages/Page1/Enter1Button" to="." method="_on_enter_1_button_pressed"]

@@ -453,3 +453,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _on_backtomainbutton_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+
+
+func _on_enter_1_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/level_1.tscn")
