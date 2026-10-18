@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://qx4evfbjc8q1"]
 
 [ext_resource type="Texture2D" uid="uid://dp23w1oeqly7i" path="res://Assets/Gorgons/Gorgon_1/Attack_3.png" id="1_ily35"]
+[ext_resource type="Script" uid="uid://bnkqy62lg50yg" path="res://Scripts/first_gorgon.gd" id="1_r51e0"]
 [ext_resource type="Texture2D" uid="uid://ckgyoge8067a" path="res://Assets/Gorgons/Gorgon_1/Dead.png" id="2_e1eqe"]
 [ext_resource type="Texture2D" uid="uid://djfilvxythhpc" path="res://Assets/Gorgons/Gorgon_1/Hurt.png" id="3_r51e0"]
 [ext_resource type="Texture2D" uid="uid://cmxgjabmfhq4c" path="res://Assets/Gorgons/Gorgon_1/Idle.png" id="4_8mtqg"]
@@ -213,9 +214,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_1iwix")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"attack",
-"speed": 10.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -343,7 +344,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7puqi"]
-size = Vector2(98, 79)
+size = Vector2(73.33333, 79)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ily35"]
 atlas = ExtResource("7_e1eqe")
@@ -354,9 +355,11 @@ atlas = ExtResource("7_e1eqe")
 region = Rect2(199, 176, 82, 4)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t76eq"]
-size = Vector2(378, 80)
+size = Vector2(548.3333, 80)
 
-[node name="FirstGorgon" type="CharacterBody2D" unique_id=603275152]
+[node name="FirstGorgon" type="CharacterBody2D" unique_id=603275152 groups=["Enemy"]]
+scale = Vector2(0.6, 0.6)
+script = ExtResource("1_r51e0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=52053815]
 sprite_frames = SubResource("SpriteFrames_t76eq")
@@ -364,7 +367,7 @@ animation = &"walk"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1422867680]
-position = Vector2(7, 24)
+position = Vector2(3.333334, 24)
 shape = SubResource("RectangleShape2D_7puqi")
 
 [node name="HealthBar" type="TextureProgressBar" parent="." unique_id=1925626464]
@@ -384,5 +387,8 @@ target_position = Vector2(1, 56)
 [node name="DetectionArea" type="Area2D" parent="." unique_id=623946619]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=902682912]
-position = Vector2(7, 24)
+position = Vector2(4.1666603, 24)
 shape = SubResource("RectangleShape2D_t76eq")
+
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_area_body_exited"]
