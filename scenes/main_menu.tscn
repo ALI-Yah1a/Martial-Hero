@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://bf8hjp0cbjn5n"]
 
-[ext_resource type="Script" uid="uid://1iixsduih5kx" path="res://scripts/main_menu.gd" id="1_qywvv"]
+[ext_resource type="Script" uid="uid://1iixsduih5kx" path="res://Scripts/main_menu.gd" id="1_qywvv"]
 [ext_resource type="Texture2D" uid="uid://cy7imkq8rw4lt" path="res://Assets/UI/Jungle Pack/Morning/Jungle_Morning_1.jpg" id="1_tbmy8"]
 [ext_resource type="FontFile" uid="uid://fduvylaftmk2" path="res://Assets/UI/Cinzel/static/Cinzel-Medium.ttf" id="3_1dfpl"]
 [ext_resource type="FontFile" uid="uid://dcefqygvimlga" path="res://Assets/UI/Cinzel_Decorative/CinzelDecorative-Bold.ttf" id="3_bqqt6"]
 [ext_resource type="FontFile" uid="uid://bnkmqorloralf" path="res://Assets/UI/Cinzel/static/Cinzel-SemiBold.ttf" id="4_wu84c"]
-[ext_resource type="Script" uid="uid://dup724cqib5t0" path="res://scripts/new_adv_button.gd" id="5_jk1qb"]
+[ext_resource type="Script" uid="uid://dup724cqib5t0" path="res://Scripts/new_adv_button.gd" id="5_jk1qb"]
 [ext_resource type="Texture2D" uid="uid://dsfgxtkoot62q" path="res://Assets/UI/icon/pickaxe.png" id="5_rtw2f"]
 [ext_resource type="Texture2D" uid="uid://dc1xu4wm6gy0d" path="res://Assets/UI/icon/pickaxe (1).png" id="6_oa1go"]
 [ext_resource type="Texture2D" uid="uid://dv4uw5xiyfgd2" path="res://Assets/UI/icon/pickaxe (2).png" id="6_tbmy8"]
@@ -22,15 +22,15 @@
 [ext_resource type="Texture2D" uid="uid://c57834ehb18qk" path="res://Assets/UI/icon/log-out (2).png" id="18_1acrt"]
 [ext_resource type="Texture2D" uid="uid://dfqtmo85cbjhl" path="res://Assets/UI/icon/log-out (1).png" id="19_vr8o3"]
 [ext_resource type="Texture2D" uid="uid://djqpp7316dhak" path="res://Assets/UI/icon/move-up-right (2).png" id="21_qywvv"]
-[ext_resource type="Script" uid="uid://dtnmckxiy1y4l" path="res://scripts/button.gd" id="22_1acrt"]
+[ext_resource type="Script" uid="uid://dtnmckxiy1y4l" path="res://Scripts/button.gd" id="22_1acrt"]
 [ext_resource type="Texture2D" uid="uid://dnpojnn8bqx4o" path="res://Assets/UI/icon/move-up-right.png" id="22_3wgol"]
 [ext_resource type="Texture2D" uid="uid://drnc0n6mskfep" path="res://Assets/UI/icon/move-up-right (1).png" id="23_1acrt"]
 [ext_resource type="Texture2D" uid="uid://4dlwiokykirq" path="res://Assets/UI/icon/move-down-left.png" id="26_1a85y"]
 [ext_resource type="Texture2D" uid="uid://dxva2p28cw0uh" path="res://Assets/UI/icon/move-down-left (2).png" id="27_hl5e0"]
 [ext_resource type="Texture2D" uid="uid://gh4d6mtfnjec" path="res://Assets/UI/icon/move-down-left (1).png" id="28_engjn"]
-[ext_resource type="Script" uid="uid://dlfftg36ekp5q" path="res://scripts/button123.gd" id="29_dj67d"]
+[ext_resource type="Script" uid="uid://dlfftg36ekp5q" path="res://Scripts/button123.gd" id="29_dj67d"]
 [ext_resource type="Texture2D" uid="uid://b330rbn55wd66" path="res://Assets/UI/icon/undo-2 (2).png" id="30_6vcge"]
-[ext_resource type="Script" uid="uid://brjxeuy2x0lud" path="res://scripts/button_2.gd" id="30_ip0br"]
+[ext_resource type="Script" uid="uid://brjxeuy2x0lud" path="res://Scripts/button_2.gd" id="30_ip0br"]
 [ext_resource type="Texture2D" uid="uid://b3qqlidrsf1uc" path="res://Assets/UI/icon/undo-2.png" id="31_ip0br"]
 [ext_resource type="Texture2D" uid="uid://dcmiprdfynxfy" path="res://Assets/UI/icon/undo-2 (1).png" id="32_xyero"]
 
@@ -1055,7 +1055,7 @@ tracks/4/keys = {
 
 [sub_resource type="Animation" id="Animation_8egab"]
 resource_name = "main menu animation"
-length = 7.5
+length = 6.4333334
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1063,7 +1063,7 @@ tracks/0/path = NodePath("game title:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
+"times": PackedFloat32Array(0, 0.8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1123,7 +1123,7 @@ tracks/5/path = NodePath("SettingsButton:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(1.5, 2),
+"times": PackedFloat32Array(1.3, 1.8666667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1135,7 +1135,7 @@ tracks/6/path = NodePath("HowToPlayButton:modulate")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(2, 2.5),
+"times": PackedFloat32Array(1.6, 2.1333334),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1147,7 +1147,7 @@ tracks/7/path = NodePath("CreditsButton:modulate")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(2.5, 3),
+"times": PackedFloat32Array(1.9333333, 2.5333333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1159,7 +1159,7 @@ tracks/8/path = NodePath("ExitButton:modulate")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(3, 3.5),
+"times": PackedFloat32Array(2.4666667, 3.0666666),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1219,7 +1219,7 @@ tracks/13/path = NodePath("SettingsButton:size")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
-"times": PackedFloat32Array(1.5, 2),
+"times": PackedFloat32Array(1.3333334, 1.8666667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(305, 67), Vector2(305, 67)]
@@ -1231,7 +1231,7 @@ tracks/14/path = NodePath("SettingsButton:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
-"times": PackedFloat32Array(1.5, 2),
+"times": PackedFloat32Array(1.3666667, 1.8666667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(101, 559), Vector2(101, 290)]
@@ -1243,7 +1243,7 @@ tracks/15/path = NodePath("HowToPlayButton:size")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(2, 2.5),
+"times": PackedFloat32Array(1.6, 2.1333334),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(305, 67), Vector2(305, 67)]
@@ -1255,7 +1255,7 @@ tracks/16/path = NodePath("HowToPlayButton:position")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
-"times": PackedFloat32Array(2, 2.5),
+"times": PackedFloat32Array(1.6, 2.1333334),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(101, 557), Vector2(101, 366)]
@@ -1267,7 +1267,7 @@ tracks/17/path = NodePath("CreditsButton:size")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
-"times": PackedFloat32Array(2.5, 3),
+"times": PackedFloat32Array(1.9666667, 2.5666666),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(305, 67), Vector2(305, 67)]
@@ -1279,7 +1279,7 @@ tracks/18/path = NodePath("CreditsButton:position")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
-"times": PackedFloat32Array(2.5, 3),
+"times": PackedFloat32Array(1.9666667, 2.6),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(101, 558), Vector2(101, 441)]
@@ -1291,7 +1291,7 @@ tracks/19/path = NodePath("ExitButton:size")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/keys = {
-"times": PackedFloat32Array(3, 3.5),
+"times": PackedFloat32Array(2.4666667, 3.1333334),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(305, 67), Vector2(305, 67)]
@@ -1303,7 +1303,7 @@ tracks/20/path = NodePath("ExitButton:position")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/keys = {
-"times": PackedFloat32Array(3, 3.5),
+"times": PackedFloat32Array(2.4666667, 3.1333334),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(101, 558), Vector2(101, 519)]
@@ -1315,7 +1315,7 @@ tracks/21/path = NodePath("colorrects/ColorRect:size")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/keys = {
-"times": PackedFloat32Array(3.5, 3.9),
+"times": PackedFloat32Array(2.9, 3.3666666),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1, 12), Vector2(1, 361)]
@@ -1327,7 +1327,7 @@ tracks/22/path = NodePath("colorrects/ColorRect:position")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/keys = {
-"times": PackedFloat32Array(3.5, 3.9),
+"times": PackedFloat32Array(2.9, 3.4),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(90, 564), Vector2(90, 215)]
@@ -1339,7 +1339,7 @@ tracks/23/path = NodePath("colorrects/ColorRect:modulate")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/keys = {
-"times": PackedFloat32Array(3.5, 3.9),
+"times": PackedFloat32Array(2.9, 3.4333334),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1351,7 +1351,7 @@ tracks/24/path = NodePath("colorrects/ColorRect2:size")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = {
-"times": PackedFloat32Array(3.9, 4.3),
+"times": PackedFloat32Array(3.3666666, 3.8666666),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1, 5), Vector2(1, 362)]
@@ -1363,7 +1363,7 @@ tracks/25/path = NodePath("colorrects/ColorRect2:position")
 tracks/25/interp = 1
 tracks/25/loop_wrap = true
 tracks/25/keys = {
-"times": PackedFloat32Array(3.9, 4.3),
+"times": PackedFloat32Array(3.3666666, 3.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(419, 572), Vector2(419, 215)]
@@ -1375,7 +1375,7 @@ tracks/26/path = NodePath("colorrects/ColorRect2:modulate")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/keys = {
-"times": PackedFloat32Array(3.9, 4.3),
+"times": PackedFloat32Array(3.4, 3.9333334),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1387,7 +1387,7 @@ tracks/27/path = NodePath("colorrects/ColorRect3:size")
 tracks/27/interp = 1
 tracks/27/loop_wrap = true
 tracks/27/keys = {
-"times": PackedFloat32Array(4.3, 4.7),
+"times": PackedFloat32Array(3.8333333, 4.3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1, 3), Vector2(291, 1)]
@@ -1399,7 +1399,7 @@ tracks/28/path = NodePath("colorrects/ColorRect3:modulate")
 tracks/28/interp = 1
 tracks/28/loop_wrap = true
 tracks/28/keys = {
-"times": PackedFloat32Array(4.3, 4.7),
+"times": PackedFloat32Array(3.8666666, 4.366667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1411,7 +1411,7 @@ tracks/29/path = NodePath("colorrects/ColorRect4:size")
 tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = {
-"times": PackedFloat32Array(4.7, 5.1),
+"times": PackedFloat32Array(4.4333334, 4.866667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1, 2), Vector2(291, 1)]
@@ -1423,7 +1423,7 @@ tracks/30/path = NodePath("colorrects/ColorRect4:position")
 tracks/30/interp = 1
 tracks/30/loop_wrap = true
 tracks/30/keys = {
-"times": PackedFloat32Array(4.7, 5.1),
+"times": PackedFloat32Array(4.4333334, 4.866667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(107, 285), Vector2(107, 285)]
@@ -1435,7 +1435,7 @@ tracks/31/path = NodePath("colorrects/ColorRect4:modulate")
 tracks/31/interp = 1
 tracks/31/loop_wrap = true
 tracks/31/keys = {
-"times": PackedFloat32Array(4.7, 5.1),
+"times": PackedFloat32Array(4.4333334, 4.9333334),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1447,7 +1447,7 @@ tracks/32/path = NodePath("colorrects/ColorRect6:size")
 tracks/32/interp = 1
 tracks/32/loop_wrap = true
 tracks/32/keys = {
-"times": PackedFloat32Array(5.1, 5.5),
+"times": PackedFloat32Array(4.9333334, 5.366667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1, 2), Vector2(291, 1)]
@@ -1459,7 +1459,7 @@ tracks/33/path = NodePath("colorrects/ColorRect6:position")
 tracks/33/interp = 1
 tracks/33/loop_wrap = true
 tracks/33/keys = {
-"times": PackedFloat32Array(5.1, 5.5),
+"times": PackedFloat32Array(4.9333334, 5.4),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(107, 361), Vector2(107, 361)]
@@ -1471,7 +1471,7 @@ tracks/34/path = NodePath("colorrects/ColorRect6:modulate")
 tracks/34/interp = 1
 tracks/34/loop_wrap = true
 tracks/34/keys = {
-"times": PackedFloat32Array(5.1, 5.5),
+"times": PackedFloat32Array(4.9666667, 5.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1483,7 +1483,7 @@ tracks/35/path = NodePath("colorrects/ColorRect7:size")
 tracks/35/interp = 1
 tracks/35/loop_wrap = true
 tracks/35/keys = {
-"times": PackedFloat32Array(5.5, 5.9),
+"times": PackedFloat32Array(5.3, 5.8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1, 1), Vector2(291, 1)]
@@ -1495,7 +1495,7 @@ tracks/36/path = NodePath("colorrects/ColorRect7:position")
 tracks/36/interp = 1
 tracks/36/loop_wrap = true
 tracks/36/keys = {
-"times": PackedFloat32Array(5.5, 5.9),
+"times": PackedFloat32Array(5.3, 5.8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(107, 437), Vector2(107, 437)]
@@ -1507,7 +1507,7 @@ tracks/37/path = NodePath("colorrects/ColorRect7:modulate")
 tracks/37/interp = 1
 tracks/37/loop_wrap = true
 tracks/37/keys = {
-"times": PackedFloat32Array(5.5, 5.9),
+"times": PackedFloat32Array(5.3333335, 5.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1519,7 +1519,7 @@ tracks/38/path = NodePath("colorrects/ColorRect8:size")
 tracks/38/interp = 1
 tracks/38/loop_wrap = true
 tracks/38/keys = {
-"times": PackedFloat32Array(5.9, 6.3),
+"times": PackedFloat32Array(5.633333, 6.1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1, 1), Vector2(291, 1)]
@@ -1531,7 +1531,7 @@ tracks/39/path = NodePath("colorrects/ColorRect8:position")
 tracks/39/interp = 1
 tracks/39/loop_wrap = true
 tracks/39/keys = {
-"times": PackedFloat32Array(5.9, 6.3),
+"times": PackedFloat32Array(5.633333, 6.1666665),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(107, 513), Vector2(107, 513)]
@@ -1543,7 +1543,7 @@ tracks/40/path = NodePath("colorrects/ColorRect8:modulate")
 tracks/40/interp = 1
 tracks/40/loop_wrap = true
 tracks/40/keys = {
-"times": PackedFloat32Array(5.9, 6.3),
+"times": PackedFloat32Array(5.633333, 6.1666665),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1555,7 +1555,7 @@ tracks/41/path = NodePath("colorrects/ColorRect9:size")
 tracks/41/interp = 1
 tracks/41/loop_wrap = true
 tracks/41/keys = {
-"times": PackedFloat32Array(6.3, 6.7),
+"times": PackedFloat32Array(5.766667, 6.266667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1, 1), Vector2(291, 1)]
@@ -1567,7 +1567,7 @@ tracks/42/path = NodePath("colorrects/ColorRect9:position")
 tracks/42/interp = 1
 tracks/42/loop_wrap = true
 tracks/42/keys = {
-"times": PackedFloat32Array(6.3, 6.7),
+"times": PackedFloat32Array(5.766667, 6.3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(107, 593), Vector2(107, 593)]
@@ -1579,7 +1579,7 @@ tracks/43/path = NodePath("colorrects/ColorRect9:modulate")
 tracks/43/interp = 1
 tracks/43/loop_wrap = true
 tracks/43/keys = {
-"times": PackedFloat32Array(6.3, 6.7),
+"times": PackedFloat32Array(5.766667, 6.233333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1591,7 +1591,7 @@ tracks/44/path = NodePath("Button:modulate")
 tracks/44/interp = 1
 tracks/44/loop_wrap = true
 tracks/44/keys = {
-"times": PackedFloat32Array(6.7, 7.1),
+"times": PackedFloat32Array(5.633333, 6.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1603,7 +1603,7 @@ tracks/45/path = NodePath("Button2:modulate")
 tracks/45/interp = 1
 tracks/45/loop_wrap = true
 tracks/45/keys = {
-"times": PackedFloat32Array(7.1, 7.5),
+"times": PackedFloat32Array(5.7, 6.233333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
