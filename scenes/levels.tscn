@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://5vp70n4jbxve"]
+[gd_scene format=3 uid="uid://d34m2uxp6tcit"]
 
-[ext_resource type="Script" uid="uid://dskq570hmahac" path="res://scripts/levels.gd" id="1_ly2og"]
+[ext_resource type="Script" uid="uid://dskq570hmahac" path="res://Scripts/levels.gd" id="1_ly2og"]
 [ext_resource type="Texture2D" uid="uid://b1ifwgbmqdp3x" path="res://Assets/UI/Jungle Pack/Afternoon/Jungle_Afternoon_1.jpg" id="2_jj4e6"]
 [ext_resource type="FontFile" uid="uid://dcefqygvimlga" path="res://Assets/UI/Cinzel_Decorative/CinzelDecorative-Bold.ttf" id="3_byla0"]
 [ext_resource type="Texture2D" uid="uid://cus54j01jlvue" path="res://Assets/UI/free-animated-pixel-ui-sampler/book/close/close_sheet.png" id="4_clqd7"]
@@ -16,7 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://dfw52f4lccv75" path="res://Assets/UI/images.jpg" id="9_8i0b8"]
 [ext_resource type="Texture2D" uid="uid://ccspuqrbxbyhm" path="res://Assets/UI/images (2).jpg" id="10_0rm5t"]
 [ext_resource type="Texture2D" uid="uid://co31jv4i21gef" path="res://Assets/UI/images (1).jpg" id="10_3vv5q"]
-[ext_resource type="Script" uid="uid://dtnmckxiy1y4l" path="res://scripts/button.gd" id="11_4knel"]
+[ext_resource type="Script" uid="uid://dtnmckxiy1y4l" path="res://Scripts/button.gd" id="11_4knel"]
 [ext_resource type="Texture2D" uid="uid://dtouh58q08grs" path="res://Assets/UI/images (4).jpg" id="11_xf5mn"]
 [ext_resource type="Texture2D" uid="uid://bdxjx2maym5v8" path="res://Assets/UI/icon/step-forward.png" id="12_mnfw1"]
 [ext_resource type="Texture2D" uid="uid://bpu8drokayg0t" path="res://Assets/UI/images (3).jpg" id="13_clqd7"]
